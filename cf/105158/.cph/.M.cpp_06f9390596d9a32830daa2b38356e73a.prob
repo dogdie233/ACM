@@ -1,1 +1,0 @@
-{"name":"Local: M","url":"d:\\Develop\\CPP\\ACM\\cf\\105158\\M.cpp","tests":[{"id":1716995706454,"input":"2\n4\n8 3 3 5\n1 2 3 2\n5\n4 3 4 5 6\n3 1 3 1 1","output":"2\n2"},{"id":1716996341665,"input":"1\n2\n16 1\n16 1","output":"1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Develop\\CPP\\ACM\\cf\\105158\\M.cpp","group":"local","local":true}

@@ -1,1 +1,0 @@
-{"name":"Local: I","url":"d:\\Develop\\CPP\\ACM\\nowcoder\\81602\\I.cpp","tests":[{"id":1722923345350,"input":"2\n2 1 7\n97 33 114514","output":"4\n75574"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Develop\\CPP\\ACM\\nowcoder\\81602\\I.cpp","group":"local","local":true}

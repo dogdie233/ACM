@@ -1,20 +1,21 @@
 #include <iostream>
-#include <string>
+#include <stack>
 
 using namespace std;
 
 inline void solve() {
-    int n, ans1 = 0, ans2 = 0;
+    int n;
+    char ch;
     cin >> n;
-    string str;
-    cin >> str;
-    for (int i = 1; i < str.size(); i += 2) {
-        ans1 += str[i - 1] != str[i];
+    stack<char> stk;
+    for (int i = 0; i < n; i++) {
+        cin >> ch;
+        if (!stk.empty() && stk.top() == ch)
+            stk.pop();
+        else
+            stk.push(ch);
     }
-    for (int i = str.size() - 2; i >= 0; i -= 2) {
-        ans2 += str[i] != str[i + 1];
-    }
-    cout << min(ans1, ans2) << '\n';
+    cout << (stk.size() / 2) << '\n';
 }
 
 int main() {

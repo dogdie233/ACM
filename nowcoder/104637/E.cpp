@@ -2,8 +2,9 @@
 #include <stdint.h>
 #include <ranges>
 #include <algorithm>
-#include <set>
 #include <vector>
+#include <set>
+#include <numeric>
 
 using namespace std;
 
@@ -11,7 +12,6 @@ int container[100];
 
 inline void solve() {
     int n;
-    int64_t prefixSum = 0;
     cin >> n;
     auto arr = ranges::subrange(container, container + n);
     for (auto& num : arr) {
@@ -19,15 +19,15 @@ inline void solve() {
     }
     sort(arr.begin(), arr.end());
 
-    set<int64_t> possibles;
-    vector<int64_t> toInsert;
+    uint64_t ans = numeric_limits<uint64_t>::max();
+    set<uint64_t> possibles;
+    vector<uint64_t> toInsert;
     possibles.insert(0);
     for (auto num : arr) {
         toInsert.clear();
         for (auto possible : possibles) {
             if (possible > num) {
-                cout << (possible + num) << '\n';
-                return;
+                ans = min(ans, possible + num);
             }
             toInsert.push_back(possible + num);
         }
@@ -37,7 +37,7 @@ inline void solve() {
         }
     }
 
-    cout << "-1\n";
+    cout << static_cast<int64_t>(ans) << endl;
 }
 
 int main() {

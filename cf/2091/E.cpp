@@ -3,12 +3,12 @@
 
 using namespace std;
 
-bool isNotPrimes[1000001];
+bool isNotPrimes[10000001];
 
 inline void init() {
-    for (int i = 2; i * i <= 1000000; i++) {
+    for (int i = 2; i * i <= 10000000; i++) {
         if (!isNotPrimes[i]) {
-            for (int j = i * i; j <= 1000000; j += i) {
+            for (int j = i * i; j <= 10000000; j += i) {
                 isNotPrimes[j] = true;
             }
         }

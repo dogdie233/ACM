@@ -1,12 +1,14 @@
 #include <iostream>
 
+typedef long long num_t;
+
 using namespace std;
 
 inline void solve() {
-    int n, m, k;
+    num_t n, m, k;
     cin >> n >> m >> k;
     
-    auto check = [&](int value) -> bool {
+    auto check = [&](num_t value) -> bool {
         auto groupPerLine = m / (value + 1);
         auto chairPerLine = groupPerLine * value;
         chairPerLine += m % (value + 1);
@@ -14,7 +16,7 @@ inline void solve() {
         return totalChair >= k;
     };
 
-    int l = 0, r = m;
+    num_t l = 0, r = m;
     while (l < r) {
         auto mid = (l + r) / 2;
         if (check(mid)) {

@@ -8,8 +8,8 @@ int main() {
     ios::sync_with_stdio(0);
     cin.tie(0);
     #endif
-    string sa(10000, 0);
-    string sb(10000, 0);
+    string sa(10001, 0);
+    string sb(10001, 0);
     cin.getline(&sa[0], sa.size()).getline(&sb[0], sb.size());
     bool removeChars[256] = {0};
     for (auto c : sb) {

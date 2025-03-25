@@ -11,7 +11,7 @@ int main() {
     scanf("%ld/%ld", &ansFz, &ansFm);
     for (int i = 1; i < n; i++) {
         scanf("%ld/%ld", &fz, &fm);
-        if (fz == 0) {
+        if (fz == 0 || fm == 0) {
             continue;
         }
         auto lcmValue = lcm(fm, ansFm);
@@ -24,6 +24,10 @@ int main() {
     
     auto integerPart = ansFz / ansFm;
     ansFz %= ansFm;
+    if (!integerPart && !ansFz) {
+        cout << 0 << '\n';
+        return 0;
+    }
     if (integerPart != 0) {
         cout << integerPart;
         if (ansFz != 0) {

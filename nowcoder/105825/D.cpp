@@ -9,7 +9,9 @@ typedef long long num_t;
 template <typename _ForwardIterator>
 num_t mex(_ForwardIterator begin, _ForwardIterator end, num_t m = 0) {
     for (auto it = begin; it != end; ++it) {
-        if (*it != m) {
+        if (*it < m) {
+            continue;
+        } else if (*it > m) {
             return m;
         }
         m++;

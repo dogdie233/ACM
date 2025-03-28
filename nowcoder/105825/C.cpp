@@ -4,14 +4,15 @@
 using namespace std;
 
 int main() {
-    int q, k, value;
+    int q, k, value, prevValue;
     cin >> q;
     set<int> arr;
     for (int i = 0; i < q; i++) {
         cin >> k;
+        prevValue = -1;
         for (int i = 0; i < k; i++) {
             cin >> value;
-            if (arr.contains(value)) {
+            if (value <= prevValue || arr.contains(value)) {
                 return cout << "NO" << endl, 0;
             }
             arr.insert(value);

@@ -16,6 +16,7 @@ int main() {
                 return cout << "NO" << endl, 0;
             }
             arr.insert(value);
+            prevValue = value;
         }
     }
     for (auto itPrev = arr.begin(), itNext = ++arr.begin(); itNext != arr.end(); itPrev++, itNext++) {

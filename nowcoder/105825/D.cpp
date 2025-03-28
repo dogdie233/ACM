@@ -6,20 +6,8 @@ using namespace std;
 
 typedef long long num_t;
 
-template <typename _ForwardIterator>
-num_t mex(_ForwardIterator begin, _ForwardIterator end, num_t m = 0) {
-    for (auto it = begin; it != end; ++it) {
-        if (*it < m) {
-            continue;
-        } else if (*it > m) {
-            return m;
-        }
-        m++;
-    }
-    return m;
-}
-
 num_t container[100000];
+num_t diffs[100000];
 
 int main() {
     #ifdef ONLINE_JUDGE
@@ -45,22 +33,40 @@ int main() {
         return cout << -1 << endl, 0;
     }
     
-    while (notZeroBegin != arr.end()) {
-        auto mexValue = mex(notZeroBegin, arr.end(), 1);
+    auto diff = ranges::subrange(diffs, diffs + n);
+    diffs[0] = 0;
+    for (auto i = 1; i < n; i++) {
+        diffs[i] = arr[i] - arr[i - 1];
+    }
+    num_t goneSum = 0;
+
+    notZeroBegin = notZeroBegin - arr.begin() + diff.begin();
+    while (notZeroBegin != diff.end()) {
+        auto mexValue = 1;
+        if (arr[notZeroBegin - diff.begin()] - goneSum == 1) {
+            mexValue = 2;
+            for (auto it = notZeroBegin + 1; it < diff.end(); it++) {
+                if (*it == 0) {
+                    continue;
+                } else if (*it != 1) {
+                    break;
+                }
+                mexValue++;
+            }
+        }
         auto opCount = (num_t)0;
         
         if (mexValue == 1) {
-            opCount = max(1ll, *notZeroBegin - 1);
+            opCount = max(1ll, arr[notZeroBegin - diff.begin()] - goneSum - 1);
         } else {
             opCount = 1;
         }
 
+        // cerr << mexValue << " " << opCount << endl;
         ans += opCount;
         auto reduceCount = opCount * mexValue;
-        for (auto it = notZeroBegin; it != arr.end(); ++it) {
-            *it = max(0ll, *it - reduceCount);
-        }
-        notZeroBegin = upper_bound(notZeroBegin, arr.end(), 0);
+        goneSum += reduceCount;
+        notZeroBegin = upper_bound(arr.begin() + (notZeroBegin - diff.begin()), arr.end(), goneSum) - arr.begin() + diff.begin();
     }
     return cout << ans << endl, 0;
 }

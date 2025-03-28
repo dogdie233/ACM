@@ -41,7 +41,12 @@ int main() {
     
     while (notZeroBegin != arr.end()) {
         auto mexValue = mex(notZeroBegin, arr.end(), 1);
-        auto divCount = max(1ll, (*notZeroBegin + mexValue - 2) / mexValue);
+        auto divCount = 0ll;
+        if ((*notZeroBegin - 1) % mexValue == 0 && (*notZeroBegin + mexValue - 1) / mexValue > 1) {
+            divCount = (*notZeroBegin - 1) / mexValue;
+        } else {
+            divCount = (*notZeroBegin + mexValue - 1) / mexValue;
+        }
         ans += divCount;
         auto reduceCount = divCount * mexValue;
         for (auto it = notZeroBegin; it != arr.end(); ++it) {

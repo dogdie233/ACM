@@ -8,30 +8,31 @@ using namespace std;
 inline void solve() {
     int n, value, op = 0;
     cin >> n;
-    vector<int32_t> isNegative(n, 0);
-    for (auto &num : isNegative) {
+    vector<int32_t> nums(n, 0);
+    for (auto &num : nums) {
         cin >> num;
     }
     string pattern;
     cin >> pattern;
 
     for (int i = 0; i < n; i++) {
-        if (isNegative[i] == 0) {
-            isNegative[i] = pattern[i] == '<' ? 1 : (pattern[i] == '>' ? 0 : isNegative[i - 1]);
-            op++;
-            continue;
-        }
-        isNegative[i] = isNegative[i] < 0;
-    }
-
-    for (int i = 0; i < n; i++) {
-        if ((pattern[i] == '<' && isNegative[i])
-            || (pattern[i] == '>' && !isNegative[i])
-            || (pattern[i] == 'Z' && !(isNegative[i] ^ isNegative[i - 1]))) {
-            continue;
+        if (pattern[i] == '<') {
+            if (nums[i] < 0) {
+                continue;
+            }
+            nums[i] = -1;
+        } else if (pattern[i] == '>') {
+            if (nums[i] > 0) {
+                continue;
+            }
+            nums[i] = 1;
+        } else {
+            if (nums[i] != 0 && !((nums[i] < 0) ^ (nums[i - 1] < 0))) {
+                continue;
+            }
+            nums[i] = nums[i - 1];
         }
         op++;
-        isNegative[i] = !isNegative[i];
     }
     
     cout << op << endl;

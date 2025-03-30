@@ -1,19 +1,28 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <stdint.h>
 
 using namespace std;
 
 inline void solve() {
     int n, value, op = 0;
     cin >> n;
-    vector<uint8_t> isNegative(n, 0);
-    for (int i = 0; i < n; i++) {
-        cin >> value;
-        isNegative[i] = value < 0;
+    vector<int32_t> isNegative(n, 0);
+    for (auto &num : isNegative) {
+        cin >> num;
     }
     string pattern;
     cin >> pattern;
+
+    for (int i = 0; i < n; i++) {
+        if (isNegative[i] == 0) {
+            isNegative[i] = pattern[i] == '<' ? 1 : (pattern[i] == '>' ? 0 : isNegative[i - 1]);
+            op++;
+            continue;
+        }
+        isNegative[i] = isNegative[i] < 0;
+    }
 
     for (int i = 0; i < n; i++) {
         if ((pattern[i] == '<' && isNegative[i])

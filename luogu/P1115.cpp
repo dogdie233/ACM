@@ -8,7 +8,7 @@ int main() {
     ios::sync_with_stdio(0);
     cin.tie(0);
     #endif
-    int n, dp = 0, num, maxx = 0;
+    int n, dp = 0, num, maxx = 0x80000000;
     cin >> n;
     for (int i = 0; i < n; i++) {
         cin >> num;

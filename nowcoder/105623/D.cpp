@@ -14,8 +14,8 @@ inline void solve() {
         cin >> num;
     }
     if (n > 0) dp[0] = nums[0];
-    if (n > 1) dp[1] = max(nums[1] + nums[0], 0ll);
-    if (n > 2) dp[2] = max(nums[0] + nums[1] + nums[2], max(nums[0], 0ll));
+    if (n > 1) dp[1] = max(nums[1] + nums[0], (int64_t)0ll);
+    if (n > 2) dp[2] = max(nums[0] + nums[1] + nums[2], max(nums[0], max(nums[2], (int64_t)0)));
     for (int i = 3; i < n; i++) {
         dp[i] = dp[i - 1] + nums[i];
         dp[i] = max(dp[i], max(dp[i - 2], dp[i - 3]));

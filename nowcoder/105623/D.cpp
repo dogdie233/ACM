@@ -8,31 +8,20 @@ inline void solve() {
     int n;
     cin >> n;
     auto nums = vector<int64_t>(n);
-    auto isDeleted = vector<bool>(n);
+    auto dp = vector<int64_t>(n);
 
     for (auto& num : nums) {
         cin >> num;
     }
+    if (n > 0) dp[0] = nums[0];
+    if (n > 1) dp[1] = max(nums[1] + nums[0], 0ll);
+    if (n > 2) dp[2] = max(nums[0] + nums[1] + nums[2], max(nums[0], 0ll));
+    for (int i = 3; i < n; i++) {
+        dp[i] = dp[i - 1] + nums[i];
+        dp[i] = max(dp[i], max(dp[i - 2], dp[i - 3]));
+    }
 
-    for (int i = 1; i < n; i++) {
-        if (nums[i] < 0 && isDeleted[i - 1]) {
-            isDeleted[i] = true;
-        } else {
-            if (nums[i - 1] + nums[i] < 0) {
-                isDeleted[i] = true;
-                isDeleted[i - 1] = true;
-            } else {
-                continue;
-            }
-        }
-    }
-    int64_t sum = 0;
-    for (int i = 0; i < n; i++) {
-        if (!isDeleted[i]) {
-            sum += nums[i];
-        }
-    }
-    cout << sum << endl;
+    cout << dp[n - 1] << endl;
 }
 
 int main() {

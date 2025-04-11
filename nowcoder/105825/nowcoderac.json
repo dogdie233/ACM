@@ -1,0 +1,108 @@
+{
+  "contestId": "105825",
+  "createdAt": "2025-03-31T09:01:42.828Z",
+  "problems": [
+    {
+      "info": {
+        "score": 100,
+        "acceptedCount": 1679,
+        "submitCount": 2316,
+        "tagId": 291559,
+        "index": "A",
+        "myStatus": "通过",
+        "problemId": 289481,
+        "title": "2025",
+        "info": {}
+      },
+      "extra": {
+        "tagId": "4",
+        "questionId": "11160646",
+        "subTagId": "1",
+        "doneQuestionId": "105825",
+        "content": "## 题目描述\n\n $\\hspace{15pt}$ 对于给定的长度不超过 $20$ ，仅由字符 $\\texttt{`-'}$ （Ascii：45）和 $\\texttt{`*'}$ （Ascii：42）组成的字符串 $s$ ，小牛会从左往右依次遍历整个字符串。他初始有一个数字 ${\\rm sum}=1$ ：  \n $\\hspace{23pt}\\bullet\\,$ 当他遍历到字符 $\\texttt{`-'}$ 时，会将 ${\\rm sum}$ 减一，即 ${\\rm sum}:={\\rm sum}-1$ ；  \n $\\hspace{23pt}\\bullet\\,$ 当他遍历到字符 $\\texttt{`*'}$ 时，会将 ${\\rm sum}$ 乘上 $2$ ，即 ${\\rm sum}:={\\rm sum}\\times 2$ 。  \n $\\hspace{15pt}$ 现在小牛想知道，是否存在某个位置使得 ${\\rm sum}\\ge 2025$ ，如果存在，则输出 $\\rm YES$ ，否则输出 $\\rm NO$ 。  \n\n\n## 输入描述\n\n $\\hspace{15pt}$ 在一行上输入一个长度为 $1 \\leq {\\rm len}(s) \\leq 20$ ，仅由字符 $\\texttt{`-'}$ 和 $\\texttt{`*'}$ 组成的字符串 $s$ 。\n\n## 输出描述\n\n $\\hspace{15pt}$ 如果存在某个位置使得 ${\\rm sum}\\ge 2025$ ，输出 $\\rm YES$ ，否则输出 $\\rm NO$ 。  \n  \n  \n $\\hspace{15pt}$ 注意，输出均为大写字母。  \n  \n\n\n",
+        "examples": [
+          {
+            "input": "**********",
+            "output": "NO",
+            "tips": " $\\hspace{15pt}$ 在这个样例中， $\\rm sum$ 的值依次为 $2\\to 4\\to 8\\to 16\\to 32\\to 64\\to 128\\to 256\\to 512\\to 1024$ ，中途没有一个数 $\\ge 2025$ ，所以输出 $\\rm NO$ 。"
+          },
+          {
+            "input": "***************",
+            "output": "YES",
+            "tips": " $\\hspace{15pt}$ 在这个样例中，当到达第 $11$ 个位置时， ${\\rm sum}=2048\\ge 2025$ ，所以输出 $\\rm YES$ 。"
+          },
+          {
+            "input": "------**------",
+            "output": "NO",
+            "tips": " $\\hspace{15pt}$ 在这个样例中，第一个位置的减法就使得 ${\\rm sum}=0$ 了，之后无论怎么操作， ${\\rm sum}$ 都会 $\\le 0$ ，所以输出 $\\rm NO$ 。"
+          }
+        ]
+      }
+    },
+    {
+      "info": {
+        "score": 100,
+        "acceptedCount": 1588,
+        "submitCount": 2647,
+        "tagId": 291560,
+        "index": "B",
+        "myStatus": "通过",
+        "problemId": 289483,
+        "title": "好字符串",
+        "info": {}
+      }
+    },
+    {
+      "info": {
+        "score": 100,
+        "acceptedCount": 1222,
+        "submitCount": 4195,
+        "tagId": 291561,
+        "index": "C",
+        "myStatus": "通过",
+        "problemId": 289480,
+        "title": "连续数组",
+        "info": {}
+      }
+    },
+    {
+      "info": {
+        "score": 100,
+        "acceptedCount": 567,
+        "submitCount": 4342,
+        "tagId": 291562,
+        "index": "D",
+        "myStatus": "通过",
+        "problemId": 289486,
+        "title": "mex",
+        "info": {}
+      }
+    },
+    {
+      "info": {
+        "score": 100,
+        "acceptedCount": 78,
+        "submitCount": 593,
+        "tagId": 291564,
+        "index": "E",
+        "myStatus": "未通过",
+        "problemId": 289482,
+        "title": "可划分数组",
+        "info": {}
+      }
+    },
+    {
+      "info": {
+        "score": 100,
+        "acceptedCount": 19,
+        "submitCount": 319,
+        "tagId": 291563,
+        "index": "F",
+        "myStatus": "未通过",
+        "problemId": 289479,
+        "title": "最小差值",
+        "info": {}
+      }
+    }
+  ]
+}

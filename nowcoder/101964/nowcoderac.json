@@ -1,0 +1,235 @@
+{
+  "contestId": "101964",
+  "createdAt": "2025-03-31T06:59:33.514Z",
+  "problems": [
+    {
+      "info": {
+        "score": 100,
+        "acceptedCount": 221,
+        "submitCount": 2661,
+        "tagId": 289600,
+        "index": "A",
+        "myStatus": "未通过",
+        "problemId": 288078,
+        "title": "数组数组",
+        "info": {}
+      },
+      "extra": {
+        "tagId": "4",
+        "questionId": "11134562",
+        "subTagId": "1",
+        "doneQuestionId": "101964",
+        "content": "## 题目描述\n\n $\\hspace{15pt}$ 对于给定的由 $n$ 个整数构成、且整数仅为 $1$ 或 $-1$ 的数组 $\\{a_1, a_2, \\dots, a_n\\}$ ，Alice 和 Bob 借助于此玩游戏。  \n $\\hspace{15pt}$ 双方轮流操作，每一次操作可以任选一个**非空连续子数组**，该子数组满足其中的所有元素的乘积恰好为 $1$ ，随后将其删除。删除后，左右剩余元素将直接拼接形成新的连续数组，下一步的操作基于新数组进行。  \n $\\hspace{15pt}$ 若轮到某位玩家操作时无法找到这样的子数组删除，则该玩家输掉游戏，对方获胜。现在，Alice 作为先手，且两人都采取最优策略，游戏最后的胜者会是谁？  \n  \n $\\hspace{15pt}$ **非空连续子数组**为从原数组中，连续的选择一段元素（可以全选，但不可以不选）得到的新数组。\n\n## 输入描述\n\n $\\hspace{15pt}$ 每个测试文件均包含多组测试数据。第一行输入一个整数 $T\\left(1\\leq T\\leq 2 \\times 10^5\\right)$ 代表数据组数，每组测试数据描述如下：  \n $\\hspace{15pt}$ 第一行输入一个正整数 $n \\left(1\\leq n\\leq 2\\times 10^5\\right)$ 代表数组中的元素个数。  \n $\\hspace{15pt}$ 第二行输入 $n$ 个整数 $a_1, a_2, \\dots, a_n \\left(a_i\\in \\{ -1,1\\}\\right)$ 代表数组中的元素。  \n  \n $\\hspace{15pt}$ 除此之外，保证单个测试文件的 $n$ 之和不超过 $2 \\times 10^5$ 。\n\n## 输出描述\n\n $\\hspace{15pt}$ 对于每一组测试数据，新起一行。如果最后获胜的是 Alice，输出 $\\rm Alice$ ，否则输出 $\\rm Bob$ 。\n\n",
+        "examples": [
+          {
+            "input": "5\n5\n1 1 1 1 1\n5\n-1 -1 -1 -1 -1\n5\n1 1 1 1 -1\n5\n1 1 -1 1 1\n5\n1 1 -1 -1 1",
+            "output": "Alice\nAlice\nAlice\nBob\nAlice",
+            "tips": ""
+          }
+        ]
+      }
+    },
+    {
+      "info": {
+        "score": 100,
+        "acceptedCount": 111,
+        "submitCount": 486,
+        "tagId": 289537,
+        "index": "B",
+        "myStatus": "未通过",
+        "problemId": 288093,
+        "title": "完美串",
+        "info": {}
+      },
+      "extra": {
+        "tagId": "4",
+        "questionId": "11136084",
+        "subTagId": "1",
+        "doneQuestionId": "101964",
+        "content": "## 题目描述\n\n $\\hspace{15pt}$ 对于给定仅由小写字母构成的字符串 $s$ ，请你将其进行重新排列后得到 $s'$ ，使其“完美长度”最大化。  \n $\\hspace{15pt}$ 字符串 $t$ 的“完美长度” $m$ 的定义如下：记 $t$ 的所有长度为 $m$ 的构成子串数组 $\\{t_1', t_2', \\dots, t_{n-m+1}'\\}$ 。如果对于每一个 $t_i'$ 来说，它的都是两两不同的，那么 $m$ 就是字符串 $t$ 的其中一个“完美长度”。  \n  \n $\\hspace{15pt}$ 为从原字符串中，连续的选择一段字符（可以全选、可以不选）得到的新字符串。\n\n## 输入描述\n\n $\\hspace{15pt}$ 在一行上输入一个长度为 $|s| \\left(1 \\leq |s| \\leq 5 \\times 10^5\\right)$ 、仅由小写字母构成的字符串 $s$ 。\n\n## 输出描述\n\n $\\hspace{15pt}$ 第一行输出一个整数，表示字符串 $s$ 的最大“完美长度”。  \n $\\hspace{15pt}$ 第二行输出一个长度为 $|s|$ 的字符串，代表重新排列得到的，能求出最大“完美长度”的字符串 $$ 。  \n  \n\n\n",
+        "examples": [
+          {
+            "input": "atwh",
+            "output": "4\nwhat",
+            "tips": null
+          },
+          {
+            "input": "union",
+            "output": "4\nniuon",
+            "tips": null
+          }
+        ]
+      }
+    },
+    {
+      "info": {
+        "score": 100,
+        "acceptedCount": 7,
+        "submitCount": 88,
+        "tagId": 289538,
+        "index": "C",
+        "myStatus": "未通过",
+        "problemId": 288080,
+        "title": "周期函数",
+        "info": {}
+      },
+      "extra": {
+        "tagId": "4",
+        "questionId": "11136085",
+        "subTagId": "1",
+        "doneQuestionId": "101964",
+        "content": "## 题目描述\n\n $\\hspace{15pt}$ 二维坐标平面上有 $n$ 个整数点，它们的坐标通过整数数组 $\\{x_1,x_2,\\dots,x_n\\}$ 和整数数组 $\\{y_1,y_2,\\dots,y_n\\}$ 来定义，第 $i$ 个点的坐标为 $(x_i,y_i)$ 。特别地，我们还保证，数组 $x$ 满足 $x_1 < x_2 < \\dots < x_n$ 。  \n $\\hspace{15pt}$ 对于每一组相邻点对 $(x_i,y_i)$ 和 $(x_{i+1},y_{i+1}) \\left( 1 \\leq i \\lt n \\right)$ ，用线段连接这两个点，得到定义域为 $[x_1,x_n]$ 的分段线性函数 $f(x)$ 。例如，在下图中，给定的六个整数点 $(-3,1)$ 、 $(-2,2)$ 、 $(0,1)$ 、 $(1,2)$ 、 $(3,1)$ 、 $(4,0)$ 生成的函数 $f(x)$ 在定义域 $[-3,4]$ 上的图像如下图所示：  \n  \n $\\hspace{15pt}$ 定义函数 $f(x)$ 在区间 $[l,r]$ 上的最小周期为满足以下条件的 $t$ ：  \n $\\hspace{23pt}\\bullet\\,$  $0 \\pmb{\\lt} t \\pmb{\\lt} r - l$   \n $\\hspace{15pt}$ 特别地，若不存在这样的 $t$ ，则将其定义为 $-1$ 。  \n  \n $\\hspace{15pt}$ 现在，进行 $q$ 次询问，每次给定区间 $[l, r]$ ，求该区间上的最小周期 $t$ 。\n\n## 输入描述\n\n $\\hspace{15pt}$ 第一行输入两个正整数 $n,q \\left(2 \\leq n \\leq 10^4;\\ 1 \\leq q \\leq 10^4\\right)$ 代表平面上整点的个数、查询次数。  \n $\\hspace{15pt}$ 第二行输入 $n$ 个整数 $x_1,x_2,\\dots,x_n\\left(-10^9 \\leq x_1 \\lt x_2 \\lt \\dots \\lt x_n \\leq 10^9\\right)$ 代表整点的横坐标。  \n $\\hspace{15pt}$ 第三行输入 $n$ 个整数 $y_1,y_2,\\dots,y_n\\left(-100 \\leq y_i \\leq 100\\right)$ 代表整点的纵坐标。  \n $\\hspace{15pt}$ 此后 $q$ 行，每行输入两个整数 $l,r\\left(-10^9 \\leq l \\leq r \\leq 10^9\\right)$ 代表函数在区间 $[l,r]$ 上的最小周期。保证 $l \\in x$ ， $r \\in x$ 。且不存在 $$ ，使得 $$ 。  \n\n\n## 输出描述\n\n $\\hspace{15pt}$ 对于每一次询问，新起一行。输出一个正整数，代表函数在询问区间上的最小周期。\n\n",
+        "examples": [
+          {
+            "input": "6 3\n-3 -2 0 1 3 4\n1 2 1 2 1 0\n-3 3\n-3 4\n1 1",
+            "output": "3\n-1\n-1",
+            "tips": "在这个样例中，函数的图像已经在题面中给出。"
+          },
+          {
+            "input": "2 1\n2 50\n3 3\n2 50",
+            "output": "1",
+            "tips": "该函数图像是一条以  和  为端点的与  轴平行的线段，由于最小周期只能是正整数，因此为  。"
+          },
+          {
+            "input": "2 1\n2 3\n3 3\n2 3",
+            "output": "-1",
+            "tips": "该函数图像是一条以  和  为端点的与  轴平行的线段，由于最小周期只能是正整数且小于 ，因此为  。"
+          }
+        ]
+      }
+    },
+    {
+      "info": {
+        "score": 100,
+        "acceptedCount": 14,
+        "submitCount": 41,
+        "tagId": 289539,
+        "index": "D",
+        "myStatus": "未通过",
+        "problemId": 288076,
+        "title": "又一树上异或和",
+        "info": {}
+      },
+      "extra": {
+        "tagId": "4",
+        "questionId": "11136083",
+        "subTagId": "1",
+        "doneQuestionId": "101964",
+        "content": "## 题目描述\n\n $\\hspace{15pt}$ 给定一棵由 $n$ 个节点构成的树，每一个点都有其对应的乐趣值 $a_i$ 。  \n $\\hspace{15pt}$ 对于树上的任意一条路径（可以不是简单路径），记这条路径上所有点的乐趣值的异或和为这条路径的“总乐趣值”。注意，如果一个点多次经过，那么这个点的乐趣值要参与多次异或运算。  \n $\\hspace{15pt}$ XiaoT 想要从中制定旅行方案，于是他进行了 $q$ 次询问，对于每次询问：  \n $\\hspace{15pt}$ 选择起点 $a$ 和终点 $b$ ，请你告诉他以点 $a$ 为起点，点 $b$ 为终点的所有路径中，能得到的最大“总乐趣值”是多少。这里的路径不一定是简单路径，同时也不一定要到达 $a$ 点或 $b$ 点后立刻停止。\n\n## 输入描述\n\n $\\hspace{15pt}$ 第一行输入两个正整数 $n,q \\left(1\\le n \\le 10^5;\\ 1\\le q\\le 2\\times 10^5\\right)$ 代表树上的节点数量、询问次数。  \n $\\hspace{15pt}$ 第二行输入 $n$ 个整数 $a_1,a_2,\\dots,a_n \\left(0\\le a_i\\lt 2^{31}\\right)$ 代表每个点的乐趣值。  \n $\\hspace{15pt}$ 此后 $n-1$ 行，第 $i$ 行输入两个正整数 $u_i,v_i \\left(1\\le u_i,v_i\\le n\\right)$ 代表树上的第 $i$ 条边连接节点 $u_i$ 和节点 $v_i$ 。  \n $\\hspace{15pt}$ 此后 $q$ 行，每行输入两个正整数 $a,b \\left(1\\le a,b\\le n\\right)$ 代表一次询问。\n\n## 输出描述\n\n $\\hspace{15pt}$ 对于每一次询问，新起一行。输出一个整数，代表最大的“总乐趣值”。  \n\n\n",
+        "examples": [
+          {
+            "input": "5 2\n1 3 3 2 3\n1 2\n1 3\n3 4\n3 5\n2 3\n2 5",
+            "output": "3\n3",
+            "tips": "在这个样例中，树的形状如下图所示。我们使用  表示异或运算。    对于第一次查询，其中一种可行的路径是 ，答案计算为 。对于第二次查询，其中一种可行的路径是  ，答案计算为 。"
+          },
+          {
+            "input": "4 3\n1 3 5 17\n1 2\n2 3\n3 4\n1 4\n2 3\n4 2",
+            "output": "22\n22\n23",
+            "tips": null
+          }
+        ]
+      }
+    },
+    {
+      "info": {
+        "score": 100,
+        "acceptedCount": 3,
+        "submitCount": 6,
+        "tagId": 289540,
+        "index": "E",
+        "myStatus": "未通过",
+        "problemId": 288082,
+        "title": "随机棋盘(Easy Version)",
+        "info": {}
+      },
+      "extra": {
+        "tagId": "4",
+        "questionId": "11136087",
+        "subTagId": "1",
+        "doneQuestionId": "101964",
+        "content": "## 题目描述\n\n  \n  \n $\\hspace{15pt}$ 这天，你试图解决下面这个问题：  \n $\\hspace{15pt}$ 由于这个问题太简单，因此，你打算对棋盘进行一些变化。你将会书写一个程序，在棋盘上的随机位置生成禁止标记，这些位置上将不再能放置车。生成完毕后，再进行上述引用问题的求解。随机程序的逻辑为：  \n $\\hspace{23pt}\\bullet\\,$ 生成一个长度为 $\\left\\lfloor\\frac{n}{2}\\right\\rfloor$ 的排列 $p$ ，随后将其中的元素打乱。  \n $\\hspace{23pt}\\bullet\\,$ 记打乱后的排列为 $\\left\\{p_1,p_2,\\cdots,p_{\\left\\lfloor\\frac{n}{2}\\right\\rfloor}\\right\\}$ ，取出第 $i$ 个元素 $p_i$ ，随后在棋盘中 $(2 \\times p_i-1,2 \\times i-1)$ 、 $(2 \\times p_i,2 \\times i-1)$ 、 $(2 \\times p_i,2 \\times i)$ 三个位置生成禁止标记。  \n  \n $\\hspace{15pt}$ 例如，在 $6 \\times 6$ 的棋盘上，若得到的打乱后的排列为 $p=(2,3,1)$ ，使用 $1$ 表示有禁止标记的位置，棋盘的情况如公式所示： $\\hspace{15pt}$ 一个可行的摆放方案为：  \n $\\hspace{15pt}$ 现在，使用上述提到的随机程序生成棋盘，并进行上述问题的求解。求解最终的棋盘上摆放 $n$ 辆车、且任意两车都无法互相攻击到的方案数的期望。你需要将答案对 $998\\,244\\,353$ 取模后输出。  \n\n\n## 输入描述\n\n $\\hspace{15pt}$ 在一行上输入一个正整数 $n\\left(2 \\leq n \\leq {\\color{orange}{\\pmb{5 \\times 10^3}}}\\right)$ 代表棋盘的边长，保证 $n$ 是偶数。\n\n## 输出描述\n\n $\\hspace{15pt}$ 输出一个整数，代表期望。  \n $\\hspace{15pt}$ 可以证明答案可以表示为一个不可约分数 $\\tfrac{p}{q}$ ，为了避免精度问题，请直接输出整数 $\\left(p \\times q^{-1} \\bmod M\\right)$ 作为答案，其中 $M = 998\\,244\\,353$ ， $q^{-1}$ 是满足 $q\\times q^{-1} \\equiv 1 \\pmod{M}$ 的整数。  \n $\\hspace{15pt}$ 更具体地，你需要找到一个整数 $x \\in [0, M)$ 满足 $x \\times q$ 对 $M$ 取模等于 $p$ ，您可以查看样例解释得到更具体的说明。\n\n",
+        "examples": [
+          {
+            "input": "2",
+            "output": "0",
+            "tips": "在这个样例中，使用随机程序生成得到的唯一的棋盘为 ，不存在任何摆放方案。"
+          },
+          {
+            "input": "6",
+            "output": "142",
+            "tips": null
+          }
+        ]
+      }
+    },
+    {
+      "info": {
+        "score": 100,
+        "acceptedCount": 1,
+        "submitCount": 7,
+        "tagId": 289541,
+        "index": "F",
+        "myStatus": "未通过",
+        "problemId": 288084,
+        "title": "随机棋盘(Hard Version)",
+        "info": {}
+      },
+      "extra": {
+        "tagId": "4",
+        "questionId": "11136089",
+        "subTagId": "1",
+        "doneQuestionId": "101964",
+        "content": "## 题目描述\n\n  \n  \n $\\hspace{15pt}$ 这天，我们试图解决下面这个问题：  \n $\\hspace{15pt}$ 由于这个问题太简单，因此，你打算对棋盘进行一些变化。你将会书写一个程序，在棋盘上的随机位置生成禁止标记，这些位置上将不再能放置车。生成完毕后，再进行上述引用问题的求解。随机程序的逻辑为：  \n $\\hspace{23pt}\\bullet\\,$ 生成一个长度为 $\\left\\lfloor\\frac{n}{2}\\right\\rfloor$ 的排列 $p$ ，随后将其中的元素打乱。  \n $\\hspace{23pt}\\bullet\\,$ 记打乱后的排列为 $\\left\\{p_1,p_2,\\cdots,p_{\\left\\lfloor\\frac{n}{2}\\right\\rfloor}\\right\\}$ ，取出第 $i$ 个元素 $p_i$ ，随后在棋盘中 $(2 \\times p_i-1,2 \\times i-1)$ 、 $(2 \\times p_i,2 \\times i-1)$ 、 $(2 \\times p_i,2 \\times i)$ 三个位置生成禁止标记。  \n  \n $\\hspace{15pt}$ 例如，在 $6 \\times 6$ 的棋盘上，若得到的打乱后的排列为 $p=(2,3,1)$ ，使用 $1$ 表示有禁止标记的位置，棋盘的情况如公式所示： $\\hspace{15pt}$ 一个可行的摆放方案为：  \n $\\hspace{15pt}$ 现在，使用上述提到的随机程序生成棋盘，并进行上述问题的求解。求解最终的棋盘上摆放 $n$ 辆车、且任意两车都无法互相攻击到的方案数的期望。你需要将答案对 $998\\,244\\,353$ 取模后输出。\n\n## 输入描述\n\n $\\hspace{15pt}$ 在一行上输入一个正整数 $n\\left(2 \\leq n \\leq {\\color{orange}{\\pmb{2 \\times 10^5}}}\\right)$ 代表棋盘的边长，保证 $n$ 是偶数。\n\n## 输出描述\n\n $\\hspace{15pt}$ 输出一个整数，代表期望。  \n $\\hspace{15pt}$ 可以证明答案可以表示为一个不可约分数 $\\tfrac{p}{q}$ ，为了避免精度问题，请直接输出整数 $\\left(p \\times q^{-1} \\bmod M\\right)$ 作为答案，其中 $M = 998\\,244\\,353$ ， $q^{-1}$ 是满足 $q\\times q^{-1} \\equiv 1 \\pmod{M}$ 的整数。  \n $\\hspace{15pt}$ 更具体地，你需要找到一个整数 $x \\in [0, M)$ 满足 $x \\times q$ 对 $M$ 取模等于 $p$ ，您可以查看样例解释得到更具体的说明。\n\n",
+        "examples": [
+          {
+            "input": "2",
+            "output": "0",
+            "tips": "在这个样例中，使用随机程序生成得到的唯一的棋盘为 ，不存在任何摆放方案。"
+          },
+          {
+            "input": "6",
+            "output": "142",
+            "tips": null
+          },
+          {
+            "input": "114514",
+            "output": "470739166",
+            "tips": null
+          }
+        ]
+      }
+    },
+    {
+      "info": {
+        "score": 100,
+        "acceptedCount": 0,
+        "submitCount": 15,
+        "tagId": 289542,
+        "index": "G",
+        "myStatus": "未通过",
+        "problemId": 288099,
+        "title": "幻想の地下大線路網",
+        "info": {}
+      },
+      "extra": {
+        "tagId": "4",
+        "questionId": "11136090",
+        "subTagId": "1",
+        "doneQuestionId": "101964",
+        "content": "## 题目描述\n\n $\\hspace{15pt}$ 地下世界可以抽象为一个二维平面，分布着 $n$ 行 $n$ 列一共 $n^2$ 个城市，每一个城市坐落在互不相同的坐标 $(i,j)$ 上（其中 $1 ≤ i ≤ n$ ， $1 ≤ j ≤ n$ ，即布满一个 $n \\times n$ 的方阵）。城市可以抽象成平面上的点。百百世希望用一条线路把所有城市串联起来，即你需要构造一条满足以下条件的折线：  \n $\\hspace{23pt}\\bullet\\,$ 折线共由 $n \\times n - 1$ 条线段首尾相连形成，并经过所有的 $n \\times n$ 个点。  \n $\\hspace{23pt}\\bullet\\,$ 每一条折线段仅将首尾的点联系起来。如果线段与除首尾之外的其他点重合，不会视为经过该点（不许中途下车！）。  \n $\\hspace{23pt}\\bullet\\,$ 折线上，线段的斜率均两两不同。这里斜率定义如下：假设折线段连接了 $( x_1, y_1 )$ 和 $( x_2, y_2 )$ ，则斜率为 $\\tfrac{y_2 - y_1}{x_2 - x_1}$ 。特别的，当 $x_2 = x_1$ 时，斜率为 $+\\infty$ 。  \n $\\hspace{15pt}$ 请你判断，这样的折线是否存在。如果存在请输出一种可行的方案。一个可行的方案由 $n^2$ 行组成，第 $i$ 行输出两个整数 $x_i, y_i$ ，表示第 $i$ 条折线段连接点 $(x_i, y_i)$ 和 $(x_{i+1}, y_{i+1})$ 。\n\n## 输入描述\n\n $\\hspace{15pt}$ 在一行上输入一个正整数 $n \\left(1 \\leq n \\leq 25\\right)$ 表示地下世界的城市数量。\n\n## 输出描述\n\n $\\hspace{15pt}$ 如果不存在这样的折线，直接输出 $\\rm No$ 。否则，请参考下方的格式输出。  \n $\\hspace{15pt}$ 第一行输出 $\\rm Yes$ 。  \n $\\hspace{15pt}$ 此后 $n ^2$ 行，第 $i$ 行输出两个整数 $x_i, y_i \\left(1 \\leq x_i, y_i \\leq n\\right)$ ，代表折线经过第 $i$ 个点的坐标。你应该首先输出起点，然后按顺序输出折线经过的点，最后输出终点。  \n  \n $\\hspace{15pt}$ 如果存在多个解决方案，您可以输出任意一个，系统会自动判定是否正确。注意，自测运行功能可能因此返回错误结果，请自行检查答案正确性。\n\n",
+        "examples": [
+          {
+            "input": "2",
+            "output": "Yes\n1 2\n2 1\n1 1\n2 2",
+            "tips": "在这个样例中，其中一个合法的构造方案如下图所示，在这个方案中，第一段线段的斜率为 ，第二段线段的斜率为 ，第三段线段的斜率为 。"
+          },
+          {
+            "input": "3",
+            "output": "Yes\n2 2\n3 3\n3 2\n1 1\n2 3\n1 3\n2 1\n1 2\n3 1",
+            "tips": "在这个样例中，其中一个合法的构造方案如下图所示。"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,235 @@
+{
+  "contestId": "104956",
+  "problems": [
+    {
+      "info": {
+        "score": 100,
+        "acceptedCount": 958,
+        "submitCount": 3658,
+        "tagId": 290737,
+        "index": "A",
+        "myStatus": "未通过",
+        "problemId": 290362,
+        "title": "A<=B问题",
+        "info": {}
+      },
+      "extra": {
+        "tagId": "4",
+        "questionId": "11172605",
+        "subTagId": "1",
+        "doneQuestionId": "104956",
+        "content": "## 题目描述\n\n上回书说道，Askalana梦见她考上了一所大专，课上，老师在狂吹某编程网站，他讲了一个有趣的小问题。构造一个长度为 $n$ 的排列 $a$ ，使得满足 $\\exists (i, j) \\in [1, n]$ 有 $i < j$ 且 $\\forall (i, j) \\in [1, n]$ 且 $i < j$ 有 $a_j \\leq a_i$ 。  \n\n\n## 输入描述\n\n第一行一个正整数 $n(1\\leq n \\leq 2 \\times 10^5)$ ，表示所求数列长度。\n\n## 输出描述\n\n $n$ 个正整数，表示所求的数列。  \n如果无解，输出 $-1$ 。  \n\n\n",
+        "examples": [
+          {
+            "input": "1",
+            "output": "-1",
+            "tips": ""
+          }
+        ]
+      }
+    },
+    {
+      "info": {
+        "score": 100,
+        "acceptedCount": 1125,
+        "submitCount": 2577,
+        "tagId": 291761,
+        "index": "B",
+        "myStatus": "通过",
+        "problemId": 292199,
+        "title": "A+B_Problem",
+        "info": {}
+      },
+      "extra": {
+        "tagId": "4",
+        "questionId": "11189213",
+        "subTagId": "1",
+        "doneQuestionId": "104956",
+        "content": "## 题目描述\n\n老师似乎觉得这题没啥挑战性，他想给大家来点刺激的。  \n给定正整数 $a, b$ ，求 $a + b$ 的值。  \n\n\n## 输入描述\n\n两个正整数 $a, b(1 \\leqq a, b \\leqq {\\tiny 9.}1 \\times 10^{18})$ \n\n## 输出描述\n\n一个正整数，表示结果\n\n",
+        "examples": [
+          {
+            "input": "2 4",
+            "output": "6",
+            "tips": ""
+          },
+          {
+            "input": "114 514",
+            "output": "628",
+            "tips": ""
+          }
+        ]
+      }
+    },
+    {
+      "info": {
+        "score": 100,
+        "acceptedCount": 1203,
+        "submitCount": 2581,
+        "tagId": 291108,
+        "index": "C",
+        "myStatus": "通过",
+        "problemId": 291027,
+        "title": "愚人节也要 A+B",
+        "info": {}
+      },
+      "extra": {
+        "tagId": "4",
+        "questionId": "11179096",
+        "subTagId": "1",
+        "doneQuestionId": "104956",
+        "content": "## 题目描述\n\n ![](https://uploadfiles.nowcoder.com/images/20250316/0_1742102334823/4D1F13BFCD46CD6FB773DD93B3A36D0A)   \n\n\n## 输入描述\n\n在一行输入两个整数 $a,b(1\\leq a,b\\leq 10^{18})$ 。\n\n## 输出描述\n\n输出 $a+b$ 。\n\n",
+        "examples": [
+          {
+            "input": "114514 1919810",
+            "output": "2034324",
+            "tips": ""
+          }
+        ]
+      }
+    },
+    {
+      "info": {
+        "score": 100,
+        "acceptedCount": 8,
+        "submitCount": 813,
+        "tagId": 291260,
+        "index": "D",
+        "myStatus": "未通过",
+        "problemId": 291361,
+        "title": "小红猜歌名2.0",
+        "info": {}
+      }
+    },
+    {
+      "info": {
+        "score": 100,
+        "acceptedCount": 27,
+        "submitCount": 208,
+        "tagId": 291834,
+        "index": "E",
+        "myStatus": "未通过",
+        "problemId": 292328,
+        "title": "城市的解药",
+        "info": {}
+      }
+    },
+    {
+      "info": {
+        "score": 100,
+        "acceptedCount": 94,
+        "submitCount": 129,
+        "tagId": 291832,
+        "index": "F",
+        "myStatus": "未通过",
+        "problemId": 292316,
+        "title": "互联网连接练习竞赛",
+        "info": {}
+      },
+      "extra": {
+        "tagId": "4",
+        "questionId": "11189780",
+        "subTagId": "1",
+        "doneQuestionId": "104956",
+        "content": "## 题目描述\n\n你准备承办 Internet Connection Practice Competition (互联网连接练习竞赛)。  \n但是这场比赛实在太火爆了，报名队伍数远超过队伍容量，甚至一度把报名网站搞崩溃，报名完成后你决定这样分配参赛名额：  \n- 每所学校最多分配 $3$ 个名额。\n- 按报名时间顺序分配 $60\\%$ 的名额。(类型A)\n- 为互联网连接练习竞赛做出非零贡献的学校分配 $30\\%$ 的名额。(类型B)\n- 为网络连接在本地服务器的学校和网络连接路径遥远的学校分配 $10\\%$ 的名额。(类型C)\n- 以报名时间顺序为第一关键字分配名额，名额类型的优先级为 A>B>C，例如：有队伍同时满足A类名额和B类名额，则该队伍的名额类型为A类。\n- **保证不会出现某类名额没有分配完的情况。**\n报名网站会对每个报名队伍生成队伍编号，队伍编号越小则报名时间越早。  \n你想手动分配名额，但是报名队伍数实在太多，你实在忙不过来，还有可能分配不公平。你突然想到可以编写程序来分配名额。那该怎么写呢？  \n\n\n## 输入描述\n\n第 $1$ 行输入两个整数 $n,m(10 \\leq m < n \\leq 10^4)$ 表示报名队伍数和队伍容量。保证 $m$ 为 $10$ 的倍数。  \n第 $2$ 行至第 $n+1$ 行，每行输入以空格分隔的字符串 $school,team$ 和整数 $id(1 \\leq id \\leq 2 \\times 10^6)$ ，分别表示学校名称、队伍名称和队伍编号。  \n第 $n+2$ 行输入一个整数 $bs(1 \\leq bs \\leq 10^4)$ 表示可以分配B类名额的学校数量。  \n第 $n+3$ 行至第 $n+bs+2$ 行，每行输入一个字符串 $school_b$ 表示可以分配B类名额的学校名称。  \n第 $n+bs+3$ 行输入一个整数 $cs(1 \\leq cs \\leq 10^4)$ 表示可以分配 C类名额的学校数量。  \n第 $n+bs+4$ 行至第 $n+bs+cs+3$ 行，每行输入一个字符串 $school_c$ 表示可以分配C类名额的学校名称。  \n保证所有的学校名称和队伍名称不出现大写字母、小写字母、下划线和数字之外的字符，且字符串长度不超过 $30$ 。  \n保证不出现两支队伍拥有相同的 $id$ 。  \n保证输入的队伍顺序是按照 $id$ 升序排序的。\n\n## 输出描述\n\n第 $1$ 行输出一个整数 $a$ ，表示分配到A类名额的队伍数量。  \n第 $2$ 行至第 $a+1$ 行，每行输出以空格分隔的字符串 $school,team$ 和整数 $id$ ，分别表示学校名称、队伍名称和队伍编号。  \n第 $a+2$ 行输出一个整数 $b$ ，表示分配到B类名额的队伍数量。  \n第 $a+3$ 行至第 $a+b+2$ 行，每行输出以空格分隔的字符串 $school,team$ 和整数 $id$ ，分别表示学校名称、队伍名称和队伍编号。  \n第 $a+b+3$ 行输出一个整数 $c$ ，表示分配到C类名额的队伍数量。  \n第 $a+b+4$ 行至第 $a+b+c+3$ 行，每行输出以空格分隔的字符串 $school,team$ 和整数 $id$ ，分别表示学校名称、队伍名称和队伍编号。  \n你需要保证输出的队伍顺序按照 $id$ 升序排序。\n\n",
+        "examples": [
+          {
+            "input": "15 10\nNaiLong_University_A WoShiNaiLong 114514\nNaiLong_University_A WoCaiShiNaiLong 114515\nNaiLong_University_A JinYeXingGuangShanShan 114516\nNaiLong_University_A WoAiNiDeXinManMan 114517\nNaiLong_University_B XiangNiYiWanYouYiWan 114518\nNaiLong_University_C BaAiNiDeXinDouTianMan 114519\nNaiLong_University_D XiangChiAiQingDeKu 114520\nNaiLong_University_E ZuoNiDeXiaoGongZhu 114521\nNaiLong_University_B YueLiangBuShuiWoBuShui 114522\nNaiLong_University_B WoShiRenJianXiaoMeiWei 114523\nNaiLong_University_C XianCaBiTiHouTiKu 114524\nNaiLong_University_B HouTiKuHouTiKu 114525\nNaiLong_University_F CongCiZouXiangSheHuiBu 114526\nNaiLong_University_F SheHuiBuSheHuiBu 114527\nNaiLong_University_C CongCiZouXiangGaLei 114528\n2\nNaiLong_University_B\nNaiLong_University_F\n1\nNaiLong_University_C",
+            "output": "6\nNaiLong_University_A WoShiNaiLong 114514\nNaiLong_University_A WoCaiShiNaiLong 114515\nNaiLong_University_A JinYeXingGuangShanShan 114516\nNaiLong_University_B XiangNiYiWanYouYiWan 114518\nNaiLong_University_C BaAiNiDeXinDouTianMan 114519\nNaiLong_University_D XiangChiAiQingDeKu 114520\n3\nNaiLong_University_B YueLiangBuShuiWoBuShui 114522\nNaiLong_University_B WoShiRenJianXiaoMeiWei 114523\nNaiLong_University_F CongCiZouXiangSheHuiBu 114526\n1\nNaiLong_University_C XianCaBiTiHouTiKu 114524",
+            "tips": "队伍id 名额分配情况  \n114514 A类名额。  \n114515 A类名额。  \n114516 A类名额。  \n114517 可以分配A类名额，但是同校已经分配3个名额，跳过。  \n114518 同时满足A类名额和B类名额，分配A类名额。  \n114519 同时满足A类名额和C类名额，分配A类名额。  \n114520 A类名额。  \n114521 A类名额已分配完，跳过。  \n114522 B类名额。  \n114523 B类名额。  \n114524 C类名额。  \n114525 可以分配B类名额，但是同校已经分配3个名额，跳过。  \n114526 B类名额。  \n114527 B类名额已分配完，跳过。  \n114528 C类名额已分配完，跳过。"
+          }
+        ]
+      }
+    },
+    {
+      "info": {
+        "score": 100,
+        "acceptedCount": 0,
+        "submitCount": 4898,
+        "tagId": 291259,
+        "index": "G",
+        "myStatus": "未通过",
+        "problemId": 291288,
+        "title": "签退",
+        "info": {}
+      }
+    },
+    {
+      "info": {
+        "score": 100,
+        "acceptedCount": 155,
+        "submitCount": 224,
+        "tagId": 291620,
+        "index": "H",
+        "myStatus": "未通过",
+        "problemId": 291922,
+        "title": "花环争夺战",
+        "info": {}
+      }
+    },
+    {
+      "info": {
+        "score": 100,
+        "acceptedCount": 574,
+        "submitCount": 12107,
+        "tagId": 291163,
+        "index": "I",
+        "myStatus": "未通过",
+        "problemId": 291127,
+        "title": "神秘坐标",
+        "info": {}
+      }
+    },
+    {
+      "info": {
+        "score": 100,
+        "acceptedCount": 8,
+        "submitCount": 131,
+        "tagId": 291537,
+        "index": "J",
+        "myStatus": "未通过",
+        "problemId": 291774,
+        "title": "与狼羊共舞",
+        "info": {}
+      }
+    },
+    {
+      "info": {
+        "score": 100,
+        "acceptedCount": 50,
+        "submitCount": 4320,
+        "tagId": 291278,
+        "index": "K",
+        "myStatus": "未通过",
+        "problemId": 291380,
+        "title": "摩卡甜心去吃面",
+        "info": {}
+      }
+    },
+    {
+      "info": {
+        "score": 100,
+        "acceptedCount": 7,
+        "submitCount": 355,
+        "tagId": 291387,
+        "index": "L",
+        "myStatus": "未通过",
+        "problemId": 291590,
+        "title": "幽灵莱柯",
+        "info": {}
+      }
+    },
+    {
+      "info": {
+        "score": 100,
+        "acceptedCount": 759,
+        "submitCount": 2082,
+        "tagId": 291385,
+        "index": "M",
+        "myStatus": "未通过",
+        "problemId": 291586,
+        "title": "说一不二",
+        "info": {}
+      }
+    }
+  ]
+}

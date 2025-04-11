@@ -1,0 +1,209 @@
+{
+    "contestId": "106318",
+    "problems": [
+        {
+            "info": {
+                "score": 25,
+                "acceptedCount": 2059,
+                "submitCount": 2708,
+                "tagId": 291884,
+                "index": "A",
+                "myStatus": "通过",
+                "problemId": 290822,
+                "title": "吔我大炮！",
+                "info": {}
+            },
+            "extra": {
+                "tagId": "4",
+                "questionId": "11178094",
+                "subTagId": "1",
+                "doneQuestionId": "106318",
+                "content": "## 题目描述\n\n\n> $\\hspace{15pt}$ 离开迷宫后，Askalana突然问你在你们刚来到这个世界的时候发生了什么。  \n> $\\hspace{15pt}$ Askalana发现了刚来到这个世界时你把她埋进山里的这个事实，她怒于你竟然没给她立个足够抽象的墓碑，你见势不妙，准备逃跑。\n\n$\\hspace{15pt}$ 大魔法师Askalana向你发射了一枚魔力炮，伤害为 $a$ ，但她是大魔法师，她能让魔法的威力增强到原伤害的 $b$ 倍。  \n$\\hspace{15pt}$ 你有一个耐久为 $c$ 的护盾，如果护盾值不小于伤害，就能完全抵挡住。  \n$\\hspace{15pt}$ 你在想，这个护盾能不能扛下威力增强后的这一发。  \n\n\n## 输入描述\n\n$\\hspace{15pt}$ 在一行上输入三个正整数 $a, b, c \\left(1 \\leqq a, b, c \\leqq 2500\\right)$ 代表伤害、增强倍数、护盾值。  \n\n\n## 输出描述\n\n$\\hspace{15pt}$ 如果护盾能扛下这一发，输出 $\\rm YES$ ，否则输出 $\\rm NO$ 。  \n\n$\\hspace{15pt}$ 您可以以任何大小写形式输出答案。例如，字符串 $\\rm{yEs}$ 、 $\\rm{yes}$ 和 $\\rm{Yes}$ 都将被视为肯定的回答。  \n\n\n",
+                "examples": [
+                    {
+                        "input": "3 5 16",
+                        "output": "yEs",
+                        "tips": "$\\hspace{15pt}$ 在这个样例中，威力增强后的这一发伤害为 $3 \\times 5 = 15$ ，护盾值为 $16$ ，所以能扛下。  \n"
+                    },
+                    {
+                        "input": "2 2 2",
+                        "output": "nO",
+                        "tips": ""
+                    }
+                ]
+            }
+        },
+        {
+            "info": {
+                "score": 75,
+                "acceptedCount": 1768,
+                "submitCount": 4892,
+                "tagId": 291885,
+                "index": "B",
+                "myStatus": "通过",
+                "problemId": 290837,
+                "title": "梦间",
+                "info": {}
+            },
+            "extra": {
+                "tagId": "4",
+                "questionId": "11178103",
+                "subTagId": "1",
+                "doneQuestionId": "106318",
+                "content": "## 题目描述\n\n\n> $\\hspace{15pt}$ 千钧一发之际，你用AEGIS反弹了Askalana的大部分魔法伤害，给她再次打进了坟墓。\n\n__$\\hspace{15pt}$ 本题与《C.坠入》共享题目背景，但是所求内容不同，我们建议您重新阅读题面。__  \n\n$\\hspace{15pt}$ 对于二维平面上给定的三个不共线整数点 $A \\left(x_A, y_A\\right)$ 、 $B \\left(x_B, y_B\\right)$ 和 $C \\left(x_C, y_C\\right)$ 。使用线段连接 $A$ 和 $B$ 、 $B$ 和 $C$ 、 $C$ 和 $A$ ，得到一个三角形。检查这个三角形的三条<u>中线</u>中，是否存在一条中线完全位于坐标轴上（即该中线对应的直线与 $x$ 轴或 $y$ 轴完全重合）。  \n\n$\\hspace{15pt}$ 在三角形中，连接一个顶点与对边中点的线段称为该顶点的<u>中线</u>。  \n\n\n## 输入描述\n\n$\\hspace{15pt}$ 每个测试文件均包含多组测试数据。第一行输入一个整数 $T\\left(1\\leqq T\\leqq 10^4\\right)$ 代表数据组数，每组测试数据描述如下：  \n$\\hspace{15pt}$ 第一行输入两个整数 $x_A, y_A \\left(-10^3 \\leqq x_A, y_A \\leqq 10^3\\right)$ 代表点 $A$ 的横、纵坐标。  \n$\\hspace{15pt}$ 第二行输入两个整数 $x_B, y_B \\left(-10^3 \\leqq x_B, y_B \\leqq 10^3\\right)$ 代表点 $B$ 的横、纵坐标。  \n$\\hspace{15pt}$ 第三行输入两个整数 $x_C, y_C \\left(-10^3 \\leqq x_C, y_C \\leqq 10^3\\right)$ 代表点 $C$ 的横、纵坐标。  \n\n  \n$\\hspace{15pt}$ 除此之外，保证 $A,B,C$ 三点不共线。  \n  \n  \n\n\n## 输出描述\n\n$\\hspace{15pt}$ 对于每一组测试数据，新起一行。如果存在一条中线落于坐标轴上，输出 $\\rm YES$ ，否则输出 $\\rm NO$ 。  \n\n$\\hspace{15pt}$ 您可以以任何大小写形式输出答案。例如，字符串 $\\rm{yEs}$ 、 $\\rm{yes}$ 和 $\\rm{Yes}$ 都将被视为肯定的回答。  \n\n\n",
+                "examples": [
+                    {
+                        "input": "3\n0 1\n-1 0\n1 0\n1 1\n4 5\n1 4\n2 2\n2 -2\n3 0",
+                        "output": "yeS\nno\nYES",
+                        "tips": "$\\hspace{15pt}$ 在这个样例中，三角形的位置如下图所示，其中，紫色实线代表第一组测试数据所形成的三角形，绿色实线代表第二组测试数据所形成的三角形，蓝色实线代表第三组测试数据所形成的三角形。虚线表示中线。  \n$\\hspace{15pt}$ 对于第一组测试数据，以 $B$ 和 $C$ 为顶点的中线与 $y$ 轴重合。所以输出 $\\rm{YES}$ 。  \n$\\hspace{15pt}$ 对于第二组测试数据，三角形的三条中线均不与坐标轴重合。所以输出 $\\rm{NO}$ 。  \n$\\hspace{15pt}$ 对于第三组测试数据，以 $A$ 和 $B$ 为顶点的中线与 $x$ 轴重合。所以输出 $\\rm{YES}$ 。  \n![](https://uploadfiles.nowcoder.com/images/20250405/0_1743865986834/61C655CAB86322A1A954679A8C3EB2BA)   \n  \n"
+                    }
+                ]
+            }
+        },
+        {
+            "info": {
+                "score": 75,
+                "acceptedCount": 1577,
+                "submitCount": 4111,
+                "tagId": 291886,
+                "index": "C",
+                "myStatus": "通过",
+                "problemId": 290842,
+                "title": "坠入",
+                "info": {}
+            },
+            "extra": {
+                "tagId": "4",
+                "questionId": "11178334",
+                "subTagId": "1",
+                "doneQuestionId": "106318",
+                "content": "## 题目描述\n\n\n> $\\hspace{15pt}$ 大魔法师Askalana为了避免迷失，开始构建法阵稳定空间。\n\n__$\\hspace{15pt}$ 本题与《B.梦间》共享题目背景，但是所求内容不同，我们建议您重新阅读题面。__  \n$\\hspace{15pt}$ 对于二维平面上给定的三个不共线的整数点 $A \\left(x_A, y_A\\right)$ 、 $B \\left(x_B, y_B\\right)$ 和 $C \\left(x_C, y_C\\right)$ 。使用线段连接 $A$ 和 $B$ 、 $B$ 和 $C$ 、 $C$ 和 $A$ ，得到一个三角形。检查这个三角形的三条<u>中线</u>中，是否存在一条中线与坐标轴平行。  \n\n$\\hspace{15pt}$ 在三角形中，连接一个顶点与对边中点的线段称为该顶点的<u>中线</u>。  \n\n\n## 输入描述\n\n$\\hspace{15pt}$ 每个测试文件均包含多组测试数据。第一行输入一个整数 $T\\left(1\\leqq T\\leqq 10^4\\right)$ 代表数据组数，每组测试数据描述如下：  \n$\\hspace{15pt}$ 第一行输入两个整数 $x_A, y_A \\left(-10^4 \\leqq x_A, y_A \\leqq 10^4\\right)$ 代表点 $A$ 的横、纵坐标。  \n$\\hspace{15pt}$ 第二行输入两个整数 $x_B, y_B \\left(-10^4 \\leqq x_B, y_B \\leqq 10^4\\right)$ 代表点 $B$ 的横、纵坐标。  \n$\\hspace{15pt}$ 第三行输入两个整数 $x_C, y_C \\left(-10^4 \\leqq x_C, y_C \\leqq 10^4\\right)$ 代表点 $C$ 的横、纵坐标。  \n\n  \n$\\hspace{15pt}$ 除此之外，保证 $A,B,C$ 三点不共线。  \n  \n  \n\n\n## 输出描述\n\n$\\hspace{15pt}$ 对于每一组测试数据，新起一行。如果存在一条中线与坐标轴平行，输出 $\\rm YES$ ，否则输出 $\\rm NO$ 。  \n\n$\\hspace{15pt}$ 您可以以任何大小写形式输出答案。例如，字符串 $\\rm{yEs}$ 、 $\\rm{yes}$ 和 $\\rm{Yes}$ 都将被视为肯定的回答。  \n\n\n",
+                "examples": [
+                    {
+                        "input": "3\n2 2\n0 0\n4 0\n1 1\n4 5\n1 4\n-3 1\n-3 -1\n-1 0",
+                        "output": "yeS\nno\nYES",
+                        "tips": "$\\hspace{15pt}$ 在这个样例中，三角形的位置如下图所示，其中，紫色实线代表第一组测试数据所形成的三角形，绿色实线代表第二组测试数据所形成的三角形，蓝色实线代表第三组测试数据所形成的三角形。虚线表示中线。  \n$\\hspace{15pt}$ 对于第一组测试数据，以 $B$ 和 $C$ 为顶点的中线与 $y$ 轴平行。所以输出 $\\rm{YES}$ 。  \n$\\hspace{15pt}$ 对于第二组测试数据，三角形的三条中线均不与坐标轴平行。所以输出 $\\rm{NO}$ 。  \n$\\hspace{15pt}$ 对于第三组测试数据，以 $A$ 和 $B$ 为顶点的中线与 $x$ 轴平行。所以输出 $\\rm{YES}$ 。 ![image](https://uploadfiles.nowcoder.com/images/20250405/0_1743866505437/EB1D5750192B4BDD65B2988B7E557BD8)   \n  \n"
+                    }
+                ]
+            }
+        },
+        {
+            "info": {
+                "score": 150,
+                "acceptedCount": 1443,
+                "submitCount": 3846,
+                "tagId": 291887,
+                "index": "D",
+                "myStatus": "通过",
+                "problemId": 292205,
+                "title": "漫步",
+                "info": {}
+            },
+            "extra": {
+                "tagId": "4",
+                "questionId": "11189248",
+                "subTagId": "1",
+                "doneQuestionId": "106318",
+                "content": "## 题目描述\n\n\n> $\\hspace{15pt}$ Askalana迷茫地漫步于梦境当中。  \n> $\\hspace{15pt}$ 她发现自己是一个孤独的根号1，希望找到一个同样孤独的根号0，和她恰一顿美味的火锅。  \n> $\\hspace{15pt}$ 可惜，根号0并不存在。\n\n$\\hspace{15pt}$ 对于给定的正整数 $x$ ，定义正整数 $y$ 能够与 $x$ 组成合法对，当且仅当 $x$ 中二进制为 $1$ 的数位在 $y$ 中也为 $1$ 。  \n$\\hspace{15pt}$ 现在，给定正整数 $x$ ，你需要判断，是否存在一个整数 $z$ 满足 $1 \\leq z < x$ ，使得 $x$ 和 $x + z$ 组成一个合法对。如果存在，输出任意一个满足条件的 $z$ ，否则输出 $-1$ 。  \n\n\n## 输入描述\n\n$\\hspace{15pt}$ 每个测试文件均包含多组测试数据。第一行输入一个整数 $T\\left(1\\leqq T\\leqq 10^3\\right)$ 代表数据组数，每组测试数据描述如下：  \n  \n$\\hspace{15pt}$ 在一行上输入一个正整数 $x \\left(1 \\leqq x \\leqq 10^{9}\\right)$ 。  \n  \n\n\n## 输出描述\n\n$\\hspace{15pt}$ 如果不存在满足条件的答案，直接输出 $-1$ ；否则，输出任意一个满足条件的 $z$ 。  \n\n$\\hspace{15pt}$ 如果存在多个解决方案，您可以输出任意一个，系统会自动判定是否正确。注意，自测运行功能可能因此返回错误结果，请自行检查答案正确性。  \n\n\n",
+                "examples": [
+                    {
+                        "input": "3\n12\n16\n19",
+                        "output": "1\n1\n4",
+                        "tips": "$\\hspace{15pt}$ 对于第一组测试数据， $12$ 加上 $1$ 等于十进制 $(13)_{10}$ ，即等于二进制 $(1101)_2$ 。由于十进制 $(12)_{10}$ 的二进制表示为 $(1100)_2$ ，我们可以发现， $(1100)_2$ 中为 $1$ 的数位（从高到低，从一开始数）为第一、第二位，而这两个数位在 $(1101)_2$ 中也为 $1$ 。所以，它们组成一个合法对。  \n"
+                    }
+                ]
+            }
+        },
+        {
+            "info": {
+                "score": 200,
+                "acceptedCount": 816,
+                "submitCount": 4896,
+                "tagId": 291889,
+                "index": "E",
+                "myStatus": "通过",
+                "problemId": 292407,
+                "title": "秘藏",
+                "info": {}
+            },
+            "extra": {
+                "tagId": "4",
+                "questionId": "11190587",
+                "subTagId": "1",
+                "doneQuestionId": "106318",
+                "content": "## 题目描述\n\n $\\hspace{15pt}$ 在这个梦中，世界有表里两面，Askalana初始在表世界，她拾起她脚下的金币，若有所思。  \n $\\hspace{15pt}$ 表、里两个世界各有 $n$ 个点，编号依次为 $1,2,\\dots,n$ 。每个点都有一定数量的金币，表世界 $i$ 号点有 $a_i$ 枚金币，里世界 $i$ 号点有 $b_i$ 枚金币。  \n $\\hspace{15pt}$ Askalana初始位于表世界的 $1$ 号点，她拾起该点的金币。之后，她会向当前世界的下一个点移动一步（即，若她当前位于表世界的 $i$ 号点，则她会移动到表世界的 $i + 1$ 号点；若她当前位于里世界的 $i$ 号点，则她会移动到里世界的 $i + 1$ 号点），并拾起该点的金币。  \n $\\hspace{15pt}$ 但Askalana是大魔法师，如果她有不少于 $k$ 枚金币，则她可以选择消耗 $k$ 枚金币，让自己跃迁到对侧世界的 $i + 1$ 号点，并拾起该点的金币。跃迁结束后，如果不再次进行跃迁，她会在对侧世界继续行走下去。  \n $\\hspace{15pt}$ 在最优策略下，Askalana在走到 $n$ 号点时最多可以获得多少金币呢？\n\n## 输入描述\n\n $\\hspace{15pt}$ 第一行输入两个正整数 $n, k \\left(1 \\leqq n \\leqq 2 \\times 10^5;\\ 1 \\leqq k \\leqq 10^9\\right)$ 代表点的数量、跃迁消耗的金币数量。  \n $\\hspace{15pt}$ 第二行输入 $n$ 个正整数 $a_1, a_2, \\dots, a_n \\left(1 \\leqq a_i \\leqq 10^9\\right)$ 代表表世界每个点的金币数量。  \n $\\hspace{15pt}$ 第三行输入 $n$ 个正整数 $b_1, b_2, \\dots, b_n \\left(1 \\leqq b_i \\leqq 10^9\\right)$ 代表里世界每个点的金币数量。\n\n## 输出描述\n\n $\\hspace{15pt}$ 输出一个正整数，代表Askalana在走到 $n$ 号点时最多可以获得的金币数量。\n\n",
+                "examples": [
+                    {
+                        "input": "5 3\n1 3 1 5 1\n2 1 4 1 6",
+                        "output": "13",
+                        "tips": " $\\hspace{15pt}$ 在这个样例中，第 $1$ 到 $4$ 个点都在表世界移动，拾起金币 $1+3+1+5=10$ 枚。之后，她消耗 $3$ 枚金币跃迁到里世界，拾起金币 $6$ 枚。最终，她获得的金币数量为 $10-3+6=13$ 枚。  \n ![](https://uploadfiles.nowcoder.com/images/20250406/0_1743936148185/8E091523F71E5C970D1DBE011BEAF91B)   \n"
+                    }
+                ]
+            }
+        },
+        {
+            "info": {
+                "score": 250,
+                "acceptedCount": 302,
+                "submitCount": 3129,
+                "tagId": 291888,
+                "index": "F",
+                "myStatus": "未通过",
+                "problemId": 290854,
+                "title": "回响",
+                "info": {}
+            },
+            "extra": {
+                "tagId": "4",
+                "questionId": "11178357",
+                "subTagId": "1",
+                "doneQuestionId": "106318",
+                "content": "## 题目描述\n\n $\\hspace{15pt}$ Askalana往前走着，她看到了你绞尽脑汁解锁遗迹大门的过程，朦胧间，画面突变，她发现她正站在门口，对着大门发呆。  \n $\\hspace{15pt}$ **本题与**牛客周赛 Round 83《B.冒险猫猫参上！！》**共享部分题目背景，这一部分我们使用特殊的格式标注。**  \n〖引用开始〗 $\\hspace{15pt}$ 要打开遗迹，需要解开遗迹门口的石子谜题。一共有 $n$ 个空格子和 $3 \\times n$ 颗石子，你需要构造一个方案，向每一个空格子中放入石子，使得相邻格子中的石子数之差的绝对值恰好为 $1$ 。更具体地，对于第 $i \\left( 1 \\lt i \\lt n \\right)$ 个格子，记你在其中放入了 $a_i$ 颗石子，则需要满足 $\\left| a_{i - 1} - a_{i} \\right| = 1$ 、且 $\\left| a_{i} - a_{i + 1} \\right| = 1$ 。  \n $\\hspace{15pt}$ 石子可以不用完，但是每一个格子都不能为空。  \n  \n〖引用结束〗  \n $\\hspace{15pt}$ 门口排成一列有 $n$ 个格子，其中部分格子上预先放置了石子，而其他格子为空。预置的石子因受到封印无法修改。你需要向每一个空的格子中放入一些石子，使得最后任意相邻的两个格子上石子数的绝对差均恰好为 $1$ 。  \n $\\hspace{15pt}$ 但这次，由于在门口解谜的变成了大魔法师Askalana，她创造了无数的石子以供使用。现在，你需要帮Askalana找到一种可行的堆放方案，使得可以再次打开大门，重返遗迹。  \n $\\hspace{15pt}$ 形式化的，给定由 $n$ 个整数构成的数组 $\\{a_1, a_2, \\dots, a_n\\}$ ，你需要将其中为 $0$ 的每一个元素独立地替换为正整数，使得对于第 $i \\left( 1 \\lt i \\leqq n \\right)$ 个元素均有 $\\lvert a_{i - 1} - a_{i} \\rvert = 1$ 成立。如果无解，直接输出 $-1$ 。\n\n## 输入描述\n\n $\\hspace{15pt}$ 第一行输入一个整数 $n \\left(1 \\leqq n \\leqq 2 \\times 10^5\\right)$ 代表石子堆数。  \n $\\hspace{15pt}$ 第二行输入 $n$ 个整数 $a_1, a_2, \\dots, a_n \\left(0 \\leqq a_i \\leqq 3 \\times n\\right)$ ，其中第 $i$ 个整数 $a_i$ 代表第 $i$ 个位置初始石子数量。\n\n## 输出描述\n\n $\\hspace{15pt}$ 如果不存在可行的方案，直接输出 $-1$ 。否则，在一行上输出 $n$ 个整数 $p_1, p_2, \\dots, p_n \\left(1 \\leqq p_i \\leqq 10^7\\right)$ 代表每一个位置最终的石子数量。你需要保证，对于任意 $i \\left( 1 \\lt i \\leqq n \\right)$ 均有 $\\lvert p_{i - 1} - p_{i} \\rvert = 1$ ，同时对于每个预置位置 $i$ （即 $a_i \\neq 0$ ），必须有 $p_i = a_i$ 。  \n  \n $\\hspace{15pt}$ 如果存在多个解决方案，您可以输出任意一个，系统会自动判定是否正确。注意，自测运行功能可能因此返回错误结果，请自行检查答案正确性。  \n\n\n",
+                "examples": [
+                    {
+                        "input": "4\n0 2 0 2",
+                        "output": "1 2 1 2",
+                        "tips": " $\\hspace{15pt}$ 第一、三个格子的放法不唯一，放入 $3$ 个石子也满足题意。"
+                    },
+                    {
+                        "input": "4\n1 2 3 4",
+                        "output": "1 2 3 4",
+                        "tips": ""
+                    },
+                    {
+                        "input": "4\n1 0 0 1",
+                        "output": "-1",
+                        "tips": ""
+                    }
+                ]
+            }
+        },
+        {
+            "info": {
+                "score": 350,
+                "acceptedCount": 111,
+                "submitCount": 1594,
+                "tagId": 291890,
+                "index": "G",
+                "myStatus": "未通过",
+                "problemId": 292413,
+                "title": "升！龙！",
+                "info": {}
+            },
+            "extra": {
+                "tagId": "4",
+                "questionId": "11190595",
+                "subTagId": "1",
+                "doneQuestionId": "106318",
+                "content": "## 题目描述\n\n $\\hspace{15pt}$ Askalana获得了不少金币，心满意足，她悠闲地漫步在梦境中，在出口的位置，她看到了一棵树。  \n $\\hspace{15pt}$ 这棵树好像不怎么美！大魔法师Askalana准备在离开之前稍微给它打理打理。  \n $\\hspace{15pt}$ 树共有 $n$ 个节点，编号为 $1$ 到 $n$ ，其中节点 $1$ 为根节点。每个节点都有一个正整数权值 $a_i$ 。定义这棵树的价值为：所有从根节点出发，到任一叶节点的__简单路径__上，经过节点的权值之和的最大值。  \n $\\hspace{15pt}$ 大魔法师Askalana不知从何下手，她申请一次场外援助，随机call一个好盆友帮她当评审。  \n $\\hspace{15pt}$ 一共 $q$ 次操作，每一个操作，Askalana会将节点 $x$ 与其父亲节点断开，并将其重新挂接到节点 $y$ 上，使得 $x$ 成为 $y$ 的子节点。题目保证每次操作后，树仍然是以节点 $1$ 为根的合法树（即操作不会把 $x$ 挂接到它自己的子树上）。请你在每次操作后，计算并输出改造后的树的价值。随后，Askalana会把树恢复到最初状态，然后再进行下一次操作。  \n  \n $\\hspace{15pt}$ 从节点 $u$ 到节点 $v$ 的__简单路径__定义为从节点 $u$ 出发，以节点 $v$ 为终点，随意在树上走，不经过重复的点和边走出来的序列。可以证明，在树上，任意两个节点间有且仅有一条简单路径。\n\n## 输入描述\n\n $\\hspace{15pt}$ 第一行输入两个整数 $n,q\\left(4 \\leqq n \\leqq 2 \\times 10^5;\\ 1 \\leqq q \\leqq 2 \\times 10^5\\right)$ 代表树上的节点数量、操作次数。  \n $\\hspace{15pt}$ 第二行输入 $n$ 个正整数 $a_1, a_2, \\dots, a_n \\left(1 \\leqq a_i \\leqq 10^9\\right)$ ，其中第 $i$ 个整数 $a_i$ 代表第 $i$ 个节点的点权。  \n $\\hspace{15pt}$ 第三行输入 $n - 1$ 个正整数 $p_2, p_3, \\dots, p_n \\left(1 \\leqq p_i \\leqq n \\right)$ ，其中第 $i$ 个整数 $p_i$ 代表第 $i$ 个节点的父节点编号。  \n $\\hspace{15pt}$ 此后 $q$ 行，每行输入两个整数 $x, y \\left(2 \\leqq x \\leqq n;\\ 1 \\leqq y \\leqq n \\right)$ 代表依次操作。保证每一次操作后，树依旧为以节点 $1$ 为根的合法树。  \n\n\n## 输出描述\n\n $\\hspace{15pt}$ 对于每一次操作，新起一行。输出一个整数代表操作后树的新价值。\n\n",
+                "examples": [
+                    {
+                        "input": "6 1\n2 10 4 7 1 1\n1 1 3 3 1\n4 6",
+                        "output": "12",
+                        "tips": ""
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,124 @@
+{
+    "contestId": 107000,
+    "problems": [
+        {
+            "info": {
+                "score": 50,
+                "acceptedCount": 1444,
+                "submitCount": 1873,
+                "tagId": 292091,
+                "index": "A",
+                "myStatus": "未通过",
+                "problemId": 292747,
+                "title": "小红开灯（一）",
+                "info": {}
+            },
+            "extra": {
+                "tagId": "4",
+                "questionId": "11193379",
+                "subTagId": "1",
+                "doneQuestionId": "107000",
+                "content": "## 题目描述\n\n有 $n$ 盏灯排成一排，初始全部为“关闭”状态。小红每次操作可以开启任意一盏灯，但不允许存在两盏相邻的灯同时开启。  \n\n小红想知道，她最多可以打开多少盏灯？  \n\n\n## 输入描述\n\n一个正整数 $n$ 。  \n$1\\leq n \\leq 100$   \n\n\n## 输出描述\n\n一个整数，代表小红可以打开的最多灯的数量。  \n\n\n",
+                "examples": [
+                    {
+                        "input": "4",
+                        "output": "2",
+                        "tips": "小红打开第一盏灯和第四盏灯即可。  \n"
+                    }
+                ]
+            }
+        },
+        {
+            "info": {
+                "score": 100,
+                "acceptedCount": 1263,
+                "submitCount": 2444,
+                "tagId": 292092,
+                "index": "B",
+                "myStatus": "未通过",
+                "problemId": 292749,
+                "title": "小红开灯（二）",
+                "info": {}
+            }
+        },
+        {
+            "info": {
+                "score": 150,
+                "acceptedCount": 730,
+                "submitCount": 2361,
+                "tagId": 292093,
+                "index": "C",
+                "myStatus": "未通过",
+                "problemId": 292751,
+                "title": "小红开灯（三，easy）",
+                "info": {}
+            }
+        },
+        {
+            "info": {
+                "score": 150,
+                "acceptedCount": 186,
+                "submitCount": 2366,
+                "tagId": 292094,
+                "index": "D",
+                "myStatus": "未通过",
+                "problemId": 292753,
+                "title": "小红开灯（三，hard）",
+                "info": {}
+            }
+        },
+        {
+            "info": {
+                "score": 200,
+                "acceptedCount": 168,
+                "submitCount": 511,
+                "tagId": 292095,
+                "index": "E",
+                "myStatus": "未通过",
+                "problemId": 292757,
+                "title": "小红开灯（四）",
+                "info": {}
+            },
+            "extra": {
+                "tagId": "4",
+                "questionId": "11193432",
+                "subTagId": "1",
+                "doneQuestionId": "107000",
+                "content": "## 题目描述\n\n有 $n*m$ 盏灯排成 $n$ 行 $m$ 列，初始为“开启”或“关闭”状态。  \n\n小红每次操作可以改变相邻两盏灯的状态（开启变关闭，关闭变开启），她想知道，能否存在一个操作方式将所有的灯都变成“开启”？请给出一个操作序列。  \n\n请注意，你不需要最小化小红的操作次数。  \n\n\n## 输入描述\n\n第一行输入两个正整数 $n,m$ ，用空格隔开。代表灯的行数和列数。  \n接下来的 $n$ 行，每行输入一个长度为 $m$ 的01串，代表每盏灯的状态。'0'代表关闭，'1'代表开启。  \n$1\\leq n,m \\leq 100$   \n\n\n## 输出描述\n\n如果无解，请输出-1。  \n否则第一行输出一个整数 $k(0\\leq k\\leq 10^5)$ ，代表操作次数；接下来的 $k$ 行，每行输出4个正整数 $x_1,y_1,x_2,y_2(1\\leq x_1,x_2\\leq n,1\\leq y_1,y_2 \\leq m)$ ，代表同时改变第 $x_1$ 行第 $y_1$ 列的灯和第 $x_2$ 行第 $y_2$ 列的灯的状态。请务必保证 $|x_1-x_2|+|y_1-y_2|=1$ 。  \n\n\n",
+                "examples": [
+                    {
+                        "input": "2 3\n101\n110",
+                        "output": "2\n1 2 1 3\n1 3 2 3",
+                        "tips": "操作方案不唯一，输出任意合法的均可。  \n"
+                    }
+                ]
+            }
+        },
+        {
+            "info": {
+                "score": 125,
+                "acceptedCount": 14,
+                "submitCount": 349,
+                "tagId": 292096,
+                "index": "F",
+                "myStatus": "未通过",
+                "problemId": 292797,
+                "title": "小红开灯（五，easy）",
+                "info": {}
+            }
+        },
+        {
+            "info": {
+                "score": 175,
+                "acceptedCount": 7,
+                "submitCount": 66,
+                "tagId": 292097,
+                "index": "G",
+                "myStatus": "未通过",
+                "problemId": 292799,
+                "title": "小红开灯（五，hard）",
+                "info": {}
+            }
+        }
+    ]
+}

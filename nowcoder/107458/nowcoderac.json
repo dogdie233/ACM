@@ -1,0 +1,207 @@
+{
+    "contestId": 107458,
+    "problems": [
+        {
+            "info": {
+                "score": 100,
+                "acceptedCount": 578,
+                "submitCount": 731,
+                "tagId": 291985,
+                "index": "A",
+                "myStatus": "通过",
+                "problemId": 292419,
+                "title": "A+B Problem",
+                "info": {}
+            },
+            "extra": {
+                "tagId": "4",
+                "questionId": "11190597",
+                "subTagId": "1",
+                "doneQuestionId": "107458",
+                "content": "## 题目描述\n\n给你一个正整数 $n$ ，请你按字典序从小到大输出前 $n$ 个大写字母全排列 $\\texttt{Problem}$ 。  \n\n  \n【广义的字典序比较】从字符串的第一个字符开始逐个比较，直到找到第一个不同的位置，通过比较这个位置字符的 $\\sf Ascii$ 码大小得到字符串的大小，称为<u>字典序比较</u>。例如，字符串 $\\texttt{$ 和  \n$\\texttt{$ 比较时，由于第一个字符不相同，所以 $\\texttt{$ 。  \n  \n  \n\n\n## 输入描述\n\n第一行有一个正整数 $1 \\leq n \\leq 4$ 。  \n\n\n## 输出描述\n\n输出有 $n!$ 行，第 $i$ 行表示字典序第 $i$ 小的答案。  \n\n\n",
+                "examples": [
+                    {
+                        "input": "1",
+                        "output": "A Problem",
+                        "tips": ""
+                    },
+                    {
+                        "input": "4",
+                        "output": "A+B+C+D Problem\nA+B+D+C Problem\nA+C+B+D Problem\nA+C+D+B Problem\nA+D+B+C Problem\nA+D+C+B Problem\nB+A+C+D Problem\nB+A+D+C Problem\nB+C+A+D Problem\nB+C+D+A Problem\nB+D+A+C Problem\nB+D+C+A Problem\nC+A+B+D Problem\nC+A+D+B Problem\nC+B+A+D Problem\nC+B+D+A Problem\nC+D+A+B Problem\nC+D+B+A Problem\nD+A+B+C Problem\nD+A+C+B Problem\nD+B+A+C Problem\nD+B+C+A Problem\nD+C+A+B Problem\nD+C+B+A Problem",
+                        "tips": ""
+                    },
+                    {
+                        "input": "3",
+                        "output": "A+B+C Problem\nA+C+B Problem\nB+A+C Problem\nB+C+A Problem\nC+A+B Problem\nC+B+A Problem",
+                        "tips": ""
+                    }
+                ]
+            }
+        },
+        {
+            "info": {
+                "score": 100,
+                "acceptedCount": 99,
+                "submitCount": 217,
+                "tagId": 292331,
+                "index": "B",
+                "myStatus": "通过",
+                "problemId": 293219,
+                "title": "图论",
+                "info": {}
+            },
+            "extra": {
+                "tagId": "4",
+                "questionId": "11198726",
+                "subTagId": "1",
+                "doneQuestionId": "107458",
+                "content": "## 题目描述\n\n给你一棵有 $n$ 个节点的树 $T$ 和一个大小为 $m$ 的节点编号不重集合 $V$ ，定义一个树 $T$ 上的边集 $E$ 是好的当且仅当在树上删掉所有在 $E$ 中的边后集合 $V$ 内的任意不同两点不连通。  \n请你求出一个边集 $E'$ ，满足 $E'$ 中边的数量在所有好的 $E$ 中最小，特别地，当存在多个符合条件的 $E'$ 时，可以输出任意一个。  \n\n  \n【树】<u>树</u>是指这样的一张图，其由 $n$ 个节点和 $n-1$ 条边构成，其上的任意两个点都连通，且不存在环。  \n  \n  \n\n\n## 输入描述\n\n第一行输入两个正整数 $n, m(1 \\leq m \\leq n \\leq 10^5)$ 。  \n此后 $n-1$ 行，第 $i$ 行输入两个整数 $u_i$ 和 $v_i\\ (1 \\leqq u_i, v_i \\leqq n;\\ u_i \\neq v_i)$ 表示树上第 $i$ 条边连接节点 $u_i$ 和 $v_i$ 。保证树连通。  \n  \n后面有一行 $m$ 个整数，表示集合 $V$ 中的节点编号。  \n\n  \n  \n\n\n## 输出描述\n\n第一行有一个非负整数 $k$ ，表示集合 $E'$ 内的元素数量。  \n此后 $k$ 行，第 $i$ 行输出两个整数 $u_i$ 和 $v_i\\ (1 \\leqq u_i, v_i \\leqq n;\\ u_i \\neq v_i)$ 表示删除的第 $i$ 条边连接节点 $u_i$ 和 $v_i$ 。  \n  \n\n\n",
+                "examples": [
+                    {
+                        "input": "5 3\n1 2\n2 3\n3 4\n4 5\n1 3 5",
+                        "output": "2\n4 5\n2 3",
+                        "tips": ""
+                    },
+                    {
+                        "input": "5 2\n1 2\n2 3\n3 4\n4 5\n1 2",
+                        "output": "1\n1 2",
+                        "tips": ""
+                    },
+                    {
+                        "input": "5 1\n1 2\n2 3\n3 4\n4 5\n1",
+                        "output": "0",
+                        "tips": "$E$ 可以为空  \n"
+                    }
+                ]
+            }
+        },
+        {
+            "info": {
+                "score": 100,
+                "acceptedCount": 3,
+                "submitCount": 13,
+                "tagId": 291986,
+                "index": "C",
+                "myStatus": "未通过",
+                "problemId": 292400,
+                "title": "变化的数组(Easy Version)",
+                "info": {}
+            },
+            "extra": {
+                "tagId": "4",
+                "questionId": "11190574",
+                "subTagId": "1",
+                "doneQuestionId": "107458",
+                "content": "## 题目描述\n\n$\\hspace{15pt}$   \n$\\mathbf{题目两个版本的差距在于\\ k\\ 的范围}$   \n  \n对于给定的长度为 $n$ 的数组 $\\{a_1,a_2,\\dots,a_n\\}$ 和一个整数 $m$ ，保证全部非负。你需要执行 $k$ 次操作，每一次操作如下：  \n$\\hspace{22.5pt}\\bullet\\$ 对数组中的每一个元素 $a_i$ ，投掷一次硬币，若硬币为正则将这个元素修改为 $a_i + (a_i \\operatorname{and} m) + x$ ；反之，则不操作；  \n$\\hspace{15pt}$ 在全部 $k$ 次操作完成后，求解数组元素和的期望。  \n\n  \n$\\hspace{15pt}$ 在本题中， $\\operatorname{and}$ 运算即按位与运算。如果您需要更多位运算相关的知识，可以参考**OI-Wiki上的相关章节**。  \n  \n\n\n## 输入描述\n\n$\\hspace{15pt}$ 第一行输入四个整数 $n,x,m,k \\left( 1\\leqq n \\leqq 10^6;\\ 1 \\leqq m, k \\leqq 5\\cdot10^3;\\ 0\\leqq x \\leqq 10^5\\right)$ 代表数组中的元素数量，修改公式中的定值 $x$ ，修改公式中的定值 $m$ ，操作次数。  \n$\\hspace{15pt}$ 第二行输入 $n$ 个整数 $a_1,a_2,\\dots,a_n \\left( 0 \\leqq a_i \\leqq 10^9 \\right)$ 代表数组元素。  \n\n\n## 输出描述\n\n$\\hspace{15pt}$ 在一行上输出一个整数，代表 $k$ 次操作完成后数组元素和的期望。  \n\n$\\hspace{15pt}$ 可以证明答案可以表示为一个不可约分数 $\\tfrac{p}{q}$ ，为了避免精度问题，请直接输出整数 $\\left(p \\cdot q^{-1} \\bmod M\\right)$ 作为答案，其中 $M = (998244353)$ ， $q^{-1}$ 是满足 $q\\times q^{-1} \\equiv 1 \\pmod{M}$ 的整数。  \n\n\n",
+                "examples": [
+                    {
+                        "input": "2 0 6 1\n3 5",
+                        "output": "11",
+                        "tips": "$\\hspace{15pt}$ 全过程模拟如下：  \n$\\hspace{22.5pt}\\bullet\\$  $\\tfrac{1}{4}$ 的概率第一个元素硬币为正、第二个元素硬币也为正，答案为 $\\tfrac{1}{4} \\times \\big(3 + (3 \\operatorname{and} m) + 0 + 5 + (5 \\operatorname{and} m) + 0\\big) =\\tfrac{14}{4}$ ；  \n$\\hspace{22.5pt}\\bullet\\$ $\\tfrac{1}{4}$ 的概率第一个元素硬币为正、第二个元素硬币为反，答案为 $\\tfrac{1}{4} \\times \\big(3 + (3 \\operatorname{and} m) + 0 + 5 \\big) =\\tfrac{10}{4}$ ；  \n$\\hspace{22.5pt}\\bullet\\$ $\\tfrac{1}{4}$ 的概率第一个元素硬币为反、第二个元素硬币为正，答案为 $\\tfrac{1}{4} \\times \\big(3 + 5 + (5 \\operatorname{and} m) + 0 \\big) =3$ ；  \n$\\hspace{22.5pt}\\bullet\\$ $\\tfrac{1}{4}$ 的概率第一个元素硬币为反、第二个元素硬币也为反，答案为 $\\tfrac{1}{4} \\times \\big(3 + 5\\big) =2$ ；  \n$\\hspace{15pt}$ 综上，期望为 $11$ 。  \n"
+                    },
+                    {
+                        "input": "10 11 4 514\n0 1 2 3 4 5 6 7 8 9",
+                        "output": "722414145",
+                        "tips": "答案模 $998244353$ 。  \n"
+                    }
+                ]
+            }
+        },
+        {
+            "info": {
+                "score": 100,
+                "acceptedCount": 0,
+                "submitCount": 4,
+                "tagId": 291987,
+                "index": "D",
+                "myStatus": "未通过",
+                "problemId": 292398,
+                "title": "构造",
+                "info": {}
+            },
+            "extra": {
+                "tagId": "4",
+                "questionId": "11190502",
+                "subTagId": "1",
+                "doneQuestionId": "107458",
+                "content": "## 题目描述\n\n$\\mathbf{注意题目内排列的定义与常见的不同，值域在\\ 0 \\sim n - 1\\ 范围}$   \n  \n$\\textbf{为了您的参赛体验，我们推荐: 当您不确定算法的正确性时，在正式提交此题之前测试所有样例}$   \n  \n【排列】长度为 $n$ 的<u>排列</u>是由 $0 \\sim n - 1$ 这 $n$ 个整数、按任意顺序组成的数组，其中每个整数恰好出现一次。例如， $\\{1,2,0,4,3\\}$ 是一个长度为 $5$   \n的排列，而 $\\{0,1,1\\}$ 和 $\\{0,2,3\\}$ 都不是排列，因为前者存在重复元素，后者包含了超出范围的数。  \n\n  \n定义一个排列 $P$ 的前缀 $mex$ 序列为一个长度为 $n$ 的非负整数数组 $pre\\_mex$ ，其中 $pre\\_mex[i]$ 表示没有在 $P$ 内 $\\texttt{前}$  $i$ 个元素内出现过的最小非负整数。  \n定义一个排列 $P$ 的后缀 $mex$ 序列为一个长度为 $n$ 的非负整数数组 $suf\\_mex$ ，其中 $suf\\_mex[i]$ 表示没有在 $P$ 内 $\\texttt{后}$  $i$ 个元素内出现过的最小非负整数。  \n  \n\n  \n给你一个排列 $a$ ，定义两个排列 $P, Q$ 相似当且仅当它们的前缀 $mex$ 序列相等且后缀 $mex$ 序列同样相等，请你求出一个排列 $b$ 满足 $b$ 是字典序大于 $a$ 且与 $a$ 相似的字典序最小的排列。  \n特别地，当无解时，请你输出 $-1$ 表示没有这样的排列 $b$ 。  \n  \n  \n\n\n## 输入描述\n\n第一行输入一个整数 $n\\ (1 \\leqq n \\leqq 10^5)$ 代表排列中的元素数量。  \n第二行输入 $n$ 个互不相同的整数 $a_1,a_2,\\cdots,a_n\\ (0 \\leqq a_i \\lt n)$ 代表排列元素。  \n\n\n## 输出描述\n\n输出一个长度为 $n$ 的排列 $b$ ，表示答案。  \n特别地，当无解时输出 $-1$ 。  \n  \n\n\n",
+                "examples": [
+                    {
+                        "input": "5\n0 2 3 4 1",
+                        "output": "0 2 4 3 1",
+                        "tips": "$pre\\_mex_a = (1,1,1,1,5)$   \n$suf\\_mex_a = (0,0,0,0,5)$   \n"
+                    },
+                    {
+                        "input": "5\n0 1 2 3 4",
+                        "output": "-1",
+                        "tips": "容易证明，不存在一个字典序大于 $a$ 的排列 $b$ 与 $a$ 相似，此时输出 $-1$ 表示无解  \n"
+                    },
+                    {
+                        "input": "7\n5 1 2 3 4 6 0",
+                        "output": "5 1 2 3 6 4 0",
+                        "tips": ""
+                    },
+                    {
+                        "input": "5\n1 2 4 3 0",
+                        "output": "1 3 2 4 0",
+                        "tips": ""
+                    },
+                    {
+                        "input": "6\n3 4 5 1 2 0",
+                        "output": "3 5 4 1 2 0",
+                        "tips": ""
+                    },
+                    {
+                        "input": "7\n1 2 6 5 0 4 3",
+                        "output": "1 4 2 5 0 6 3",
+                        "tips": ""
+                    },
+                    {
+                        "input": "6\n1 2 3 5 4 0",
+                        "output": "1 2 4 3 5 0",
+                        "tips": ""
+                    }
+                ]
+            }
+        },
+        {
+            "info": {
+                "score": 100,
+                "acceptedCount": 0,
+                "submitCount": 2,
+                "tagId": 291988,
+                "index": "E",
+                "myStatus": "未通过",
+                "problemId": 292402,
+                "title": "变化的数组(Hard Version)",
+                "info": {}
+            }
+        },
+        {
+            "info": {
+                "score": 100,
+                "acceptedCount": 0,
+                "submitCount": 4,
+                "tagId": 291989,
+                "index": "F",
+                "myStatus": "未通过",
+                "problemId": 292417,
+                "title": "数论",
+                "info": {}
+            }
+        },
+        {
+            "info": {
+                "score": 100,
+                "acceptedCount": 0,
+                "submitCount": 2,
+                "tagId": 291990,
+                "index": "G",
+                "myStatus": "未通过",
+                "problemId": 292421,
+                "title": "字符串",
+                "info": {}
+            }
+        }
+    ]
+}

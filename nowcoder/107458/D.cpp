@@ -92,5 +92,7 @@ int main() {
         cout << nums[i] << " ";
     }
 
+    cout << 1 + 1;
+
     return 0;
 }

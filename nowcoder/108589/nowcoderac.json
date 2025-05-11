@@ -1,0 +1,130 @@
+{
+    "contestId": 108589,
+    "problems": [
+        {
+            "info": {
+                "score": 50,
+                "acceptedCount": 1003,
+                "submitCount": 1517,
+                "tagId": 293095,
+                "index": "A",
+                "myStatus": "通过",
+                "problemId": 294401,
+                "title": "小红的签到题",
+                "info": {}
+            },
+            "extra": {
+                "tagId": "4",
+                "questionId": "11214244",
+                "subTagId": "1",
+                "doneQuestionId": "108589",
+                "content": "## 题目描述\n\n$\\hspace{15pt}$ 已知变量主流有两种命名方式：“驼峰命名法”和“下划线命名法”。小红更喜欢用“下划线命名法”。这个命名法的规则是：  \n$\\hspace{23pt}\\bullet\\,$ 变量名仅由小写字母和下划线组成，用下划线来连接每个单词（单词不能为空），每个单词均由小写字母组成，每两个单词之间有一个下划线（ $\\texttt{`_'}$ ）。例如， $\\texttt{$ ， $\\texttt{$ 均为下划线命名法。  \n\n$\\hspace{15pt}$ 现在小红希望你写出一个长度为 $n$ 的、使用了下划线命名法命名的变量。为了显出特征，请保证该变量至少由两个单词组成。  \n\n\n## 输入描述\n\n$\\hspace{15pt}$ 输入一个正整数 $n \\left(3 \\leqq n \\leqq 100\\right)$ ，代表需要构造的变量长度。  \n\n\n## 输出描述\n\n$\\hspace{15pt}$ 输出一个长度为 $n$ 的字符串，代表你所构造的使用了下划线命名法命名的变量。  \n$\\hspace{15pt}$ 如果存在多个解决方案，您可以输出任意一个，系统会自动判定是否正确。注意，自测运行功能可能因此返回错误结果，请自行检查答案正确性。  \n\n\n",
+                "examples": [
+                    {
+                        "input": "11",
+                        "output": "kato_megumi",
+                        "tips": ""
+                    }
+                ]
+            }
+        },
+        {
+            "info": {
+                "score": 100,
+                "acceptedCount": 157,
+                "submitCount": 324,
+                "tagId": 293096,
+                "index": "B",
+                "myStatus": "通过",
+                "problemId": 294403,
+                "title": "小红的模拟题",
+                "info": {}
+            },
+            "extra": {
+                "tagId": "4",
+                "questionId": "11214298",
+                "subTagId": "1",
+                "doneQuestionId": "108589",
+                "content": "## 题目描述\n\n$\\hspace{15pt}$ 给定一个 $n$ 行 $m$ 列的网格，我们使用 $(i,j)$ 表示网格中从上往下数第 $i$ 行和从左往右数第 $j$ 列的格子。小红现在位于 $(1,1)$ ，准备前往 $(n,m)$ 。  \n$\\hspace{15pt}$ 然而，不是所有的格子都是可以通行的，有且恰有一个格子是陷阱格，一旦小红踏入陷阱格，就会直接去逝。保证这个陷阱格不会出现在 $(1,1)$ 和 $(n,m)$ 。  \n$\\hspace{15pt}$ 小红每一步只能向右或者向下前进。请你帮小红规划一条行动路线，使得她可以顺利到达 $(n,m)$ 。  \n\n$\\hspace{15pt}$ 行动路线为一个仅由字符 $\\texttt{`D'}$ 、 $\\texttt{`S'}$ 构成的字符串 $s$ ，第 $i$ 个字符代表小红第 $i$ 次行动的方向。记第 $i$ 次行动前小红位于 $(x,y)$ ，则：  \n$\\hspace{23pt}\\bullet\\,$ 若 $s_i = \\texttt{`D'}$ ，则小红向右移动一格即抵达 $(x,y+1)$ ；  \n$\\hspace{23pt}\\bullet\\,$ 若 $s_i = \\texttt{`S'}$ ，则小红向下移动一格即抵达 $(x+1,y)$ 。  \n\n\n## 输入描述\n\n$\\hspace{15pt}$ 第一行输入两个正整数 $n,m \\left(2 \\leqq n,m \\leqq 10^3\\right)$ ，代表网格的行数和列数。  \n$\\hspace{15pt}$ 接下来的 $n$ 行，第 $i$ 行输入一个长度为 $m$ 的、仅由 $\\texttt{`.'}$ 和 $\\texttt{`\\#'}$ 构成的字符串 $a_{i,1}a_{i,2}\\cdots a_{i,m}$ 。其中 $a_{i,j} = \\texttt{`.'}$ 表示格子 $(i,j)$ 可以通行， $a_{i,j} = \\texttt{`\\#'}$ 表示格子 $(i,j)$ 是陷阱格。  \n\n$\\hspace{15pt}$ 除此之外，保证有且只有一个陷阱格，且不位于 $(1,1)$ 和 $(n,m)$ 。  \n\n\n## 输出描述\n\n$\\hspace{15pt}$ 输出一个字符串，代表小红的行动路线。  \n$\\hspace{15pt}$ 如果存在多个解决方案，您可以输出任意一个，系统会自动判定是否正确。注意，自测运行功能可能因此返回错误结果，请自行检查答案正确性。  \n\n\n",
+                "examples": [
+                    {
+                        "input": "2 3\n...\n.#.",
+                        "output": "DDS",
+                        "tips": "$\\hspace{15pt}$ 在这个样例中，小红先向右走两步，然后向下走一步，即可安全到达目的地。  \n"
+                    }
+                ]
+            }
+        },
+        {
+            "info": {
+                "score": 150,
+                "acceptedCount": 28,
+                "submitCount": 66,
+                "tagId": 293097,
+                "index": "C",
+                "myStatus": "未通过",
+                "problemId": 294405,
+                "title": "小红的方神题",
+                "info": {}
+            },
+            "extra": {
+                "tagId": "4",
+                "questionId": "11214303",
+                "subTagId": "1",
+                "doneQuestionId": "108589",
+                "content": "## 题目描述\n\n$\\hspace{15pt}$ 对于数组 $a$ ，我们定义它的退化状态为：取每个相邻两数之差的绝对值构成的新数组。换句话说，退化后的 $a$ 数组是一个长度为 ${\\rm len}(a)-1$ 的数组，其第 $i$ 个元素为 $\\lvert a_i - a_{i+1} \\rvert$ 。  \n$\\hspace{15pt}$ TRfirst 希望小红构造一个长度为 $n$ 的排列，使得其连续进行 $n-1$ 次退化后，最终生成的一个整数恰好等于 $n-2$ 。你能帮帮小红吗？如果不存在这样的排列，直接输出 $-1$ 即可。  \n\n$\\hspace{15pt}$ 长度为 $n$ 的<u>排列</u>是由 $1,2,\\dots,n$ 这 $n$ 个整数、按任意顺序组成的数组（每个整数均恰好出现一次）。例如， $\\{2,3,1,5,4\\}$ 是一个长度为 $5$ 的排列，而 $\\{1,2,2\\}$ 和 $\\{1,3,4\\}$ 都不是排列，因为前者存在重复元素，后者包含了超出范围的数。  \n\n\n## 输入描述\n\n$\\hspace{15pt}$ 输入一个正整数 $n \\left(1 \\leqq n \\leqq 10^3\\right)$ ，代表待构造的排列的长度。  \n\n\n## 输出描述\n\n$\\hspace{15pt}$ 如果不存在满足条件的排列，直接输出 $-1$ 。否则，在一行中输出 $n$ 个两两不同的正整数 $a_1,a_2,\\dots,a_n \\left(1 \\leqq a_i \\leqq n\\right)$ ，代表小红构造的排列。  \n$\\hspace{15pt}$ 如果存在多个解决方案，您可以输出任意一个，系统会自动判定是否正确。注意，自测运行功能可能因此返回错误结果，请自行检查答案正确性。  \n\n\n",
+                "examples": [
+                    {
+                        "input": "3",
+                        "output": "1 3 2",
+                        "tips": "$\\hspace{15pt}$ 在这个样例中，数组 $\\{1,3,2\\}$ 退化一次后得到 $\\{2,1\\}$ ，再退化一次后得到 $\\{1\\}$ ，恰好等于 $n-2$ 。  \n"
+                    },
+                    {
+                        "input": "1",
+                        "output": "-1",
+                        "tips": "$\\hspace{15pt}$ 唯一的初始排列为 $\\{1\\}$ ，经过 $0$ 次退化后，最终值为 $1$ 。  \n"
+                    }
+                ]
+            }
+        },
+        {
+            "info": {
+                "score": 225,
+                "acceptedCount": 4,
+                "submitCount": 16,
+                "tagId": 293099,
+                "index": "D",
+                "myStatus": "未通过",
+                "problemId": 294428,
+                "title": "小红的数学题",
+                "info": {}
+            }
+        },
+        {
+            "info": {
+                "score": 225,
+                "acceptedCount": 3,
+                "submitCount": 3,
+                "tagId": 293098,
+                "index": "E",
+                "myStatus": "未通过",
+                "problemId": 294416,
+                "title": "小红的ds题",
+                "info": {}
+            }
+        },
+        {
+            "info": {
+                "score": 250,
+                "acceptedCount": 0,
+                "submitCount": 7,
+                "tagId": 293100,
+                "index": "F",
+                "myStatus": "未通过",
+                "problemId": 294436,
+                "title": "小红的小苯题",
+                "info": {}
+            }
+        }
+    ]
+}

@@ -10,14 +10,12 @@ int main() {
     #endif
     int n;
     cin >> n;
-    if (n == 1) {
-        return cout << "-1" << endl, 0;
-    } else if (n == 2) {
-        return cout << "2 1" << endl, 0;
-    } else if (n == 3) {
-        return cout << "3 1 2" << endl, 0;
-    } else {
-        return cout << "-1" << endl, 0;
+    if (n < 3) {
+        return cout << "-1\n", 0;
     }
-    return 0;
+    cout << n;
+    for (int i = 1; i < n; i++) {
+        cout << ' ' << i;
+    }
+    return cout << '\n', 0;
 }

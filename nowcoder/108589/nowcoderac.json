@@ -4,8 +4,8 @@
         {
             "info": {
                 "score": 50,
-                "acceptedCount": 1003,
-                "submitCount": 1517,
+                "acceptedCount": 1298,
+                "submitCount": 2024,
                 "tagId": 293095,
                 "index": "A",
                 "myStatus": "通过",
@@ -31,8 +31,8 @@
         {
             "info": {
                 "score": 100,
-                "acceptedCount": 157,
-                "submitCount": 324,
+                "acceptedCount": 716,
+                "submitCount": 1761,
                 "tagId": 293096,
                 "index": "B",
                 "myStatus": "通过",
@@ -58,8 +58,8 @@
         {
             "info": {
                 "score": 150,
-                "acceptedCount": 28,
-                "submitCount": 66,
+                "acceptedCount": 391,
+                "submitCount": 870,
                 "tagId": 293097,
                 "index": "C",
                 "myStatus": "未通过",
@@ -90,34 +90,72 @@
         {
             "info": {
                 "score": 225,
-                "acceptedCount": 4,
-                "submitCount": 16,
+                "acceptedCount": 91,
+                "submitCount": 504,
                 "tagId": 293099,
                 "index": "D",
                 "myStatus": "未通过",
                 "problemId": 294428,
                 "title": "小红的数学题",
                 "info": {}
+            },
+            "extra": {
+                "tagId": "4",
+                "questionId": "11214733",
+                "subTagId": "1",
+                "doneQuestionId": "108589",
+                "content": "## 题目描述\n\n$\\hspace{15pt}$ 小红拿到了一个正整数 $k$ ，她希望你找到两个正整数 $p,q$ ，满足 $p+q=k$ ，且方程 $x^2-px+q=0$ 存在两个正整数解。特别地，如果不存在这样的 $p,q$ ，请输出 $-1$ 。  \n\n\n## 输入描述\n\n$\\hspace{15pt}$ 一个正整数 $k \\left(1 \\leqq k \\leqq 10^{12}\\right)$ 。  \n\n\n## 输出描述\n\n$\\hspace{15pt}$ 如果不存在这样的 $p,q$ ，直接输出 $-1$ 。否则，在一行上输出两个整数 $p$ 和 $q$ ，代表满足条件的正整数解。  \n$\\hspace{15pt}$ 如果存在多个解决方案，您可以输出任意一个，系统会自动判定是否正确。注意，自测运行功能可能因此返回错误结果，请自行检查答案正确性。  \n\n\n",
+                "examples": [
+                    {
+                        "input": "8",
+                        "output": "4 4",
+                        "tips": "$x^2-4x+4=0$ 有一个重根：2，也被视为两个正整数解。  \n"
+                    },
+                    {
+                        "input": "2",
+                        "output": "-1",
+                        "tips": ""
+                    },
+                    {
+                        "input": "5",
+                        "output": "3 2",
+                        "tips": "$x^2-3x+2=0$ 有两个根：1和2。  \n  \n"
+                    }
+                ]
             }
         },
         {
             "info": {
                 "score": 225,
-                "acceptedCount": 3,
-                "submitCount": 3,
+                "acceptedCount": 40,
+                "submitCount": 75,
                 "tagId": 293098,
                 "index": "E",
                 "myStatus": "未通过",
                 "problemId": 294416,
                 "title": "小红的ds题",
                 "info": {}
+            },
+            "extra": {
+                "tagId": "4",
+                "questionId": "11214513",
+                "subTagId": "1",
+                "doneQuestionId": "108589",
+                "content": "## 题目描述\n\n$\\hspace{15pt}$ 小红希望你构造一棵层数为 $n$ 的<u>二叉树</u>，其第 $i$ 层恰好有 $a_i$ 个节点。你能帮帮她吗？  \n\n$\\hspace{15pt}$ 一棵树被称为<u>二叉树</u>，当且仅当其满足：  \n$\\hspace{23pt}\\bullet\\,$ 每个节点要么没有父节点连接（此时该节点被称为根节点）、要么被 $1$ 个父节点连接（此时该节点被称为父节点的子节点）；  \n$\\hspace{23pt}\\bullet\\,$ 每个节点连接的子节点数量要么为 $0$ （此时该节点被称为叶子节点）、要么小于等于 $2$ （此时该节点被称为分支节点）。  \n\n\n## 输入描述\n\n$\\hspace{15pt}$ 第一行输入一个正整数 $n \\left(1 \\leqq n \\leqq 10^4\\right)$ ，代表二叉树的层数。  \n$\\hspace{15pt}$ 第二行输入 $n$ 个正整数 $a_1,a_2,\\dots,a_n \\left(1 \\leqq a_i \\leqq 10^5\\right)$ ，代表二叉树的第 $i$ 层的节点数量限制。保证 $a_1 = 1$ ，且对于 $2 \\leqq i \\leqq n$ ，均有 $a_i \\leqq a_{i-1} \\times 2$ 。  \n\n$\\hspace{15pt}$ 除此之外，保证单个测试文件的 $a_i$ 之和不超过 $10^5$ 。  \n\n\n## 输出描述\n\n$\\hspace{15pt}$ 第一行输出一个正整数 $p \\left(1 \\leqq p \\leqq n\\right)$ ，代表根结点的编号。编号从 $1$ 开始。  \n$\\hspace{15pt}$ 此后输出 $\\sum\\limits_{i=1}^n a_i$ 行，第 $i$ 行输出两个元素 $l_i,r_i$ ，分别代表 $i$ 号节点的左儿子和右儿子的编号。特别的，如果不存在左儿子/右儿子，则输出 $-1$ 替代这个编号。  \n\n$\\hspace{15pt}$ 如果存在多个解决方案，您可以输出任意一个，系统会自动判定是否正确。注意，自测运行功能可能因此返回错误结果，请自行检查答案正确性。  \n\n\n",
+                "examples": [
+                    {
+                        "input": "3\n1 2 3",
+                        "output": "4\n-1 -1\n1 -1\n6 5\n2 3\n-1 -1\n-1 -1",
+                        "tips": "![image.png](https://uploadfiles.nowcoder.com/images/20250509/0_1746775610366/F144092F2E22BAFC37032980A8C24E7B)   \n"
+                    }
+                ]
             }
         },
         {
             "info": {
                 "score": 250,
-                "acceptedCount": 0,
-                "submitCount": 7,
+                "acceptedCount": 9,
+                "submitCount": 68,
                 "tagId": 293100,
                 "index": "F",
                 "myStatus": "未通过",
